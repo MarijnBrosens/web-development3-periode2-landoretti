@@ -16,7 +16,6 @@ var paths = {
 };
 
 elixir(function(mix) {
-    //mix.sass('app.scss');
 
     // Compile STYLESHEETS
     mix.sass(
@@ -33,4 +32,5 @@ elixir(function(mix) {
     ],
     'public/js/app.js'
     );
+
 });
