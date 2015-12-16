@@ -11,6 +11,26 @@ var elixir = require('laravel-elixir');
  |
  */
 
+var paths = {
+    //'jquery': './vendor/bower_components/jquery/'
+};
+
 elixir(function(mix) {
-    mix.sass('app.scss');
+    //mix.sass('app.scss');
+
+    // Compile STYLESHEETS
+    mix.sass(
+        'app.scss',
+        'public/css'
+    );
+
+    // Compile SCRIPTS
+    mix.scripts(
+    [
+        //paths.bootstrap + 'javascripts/bootstrap.js',
+        //paths.moment + 'min/moment-with-locales.min.js',
+        'app.js'
+    ],
+    'public/js/app.js'
+    );
 });
