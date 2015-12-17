@@ -12,7 +12,8 @@ var elixir = require('laravel-elixir');
  */
 
 var paths = {
-    //'jquery': './vendor/bower_components/jquery/'
+    'jquery': './vendor/bower_components/jquery/',
+    'bxslider': './vendor/bower_components/bxslider-4/'
 };
 
 elixir(function(mix) {
@@ -28,6 +29,8 @@ elixir(function(mix) {
     [
         //paths.bootstrap + 'javascripts/bootstrap.js',
         //paths.moment + 'min/moment-with-locales.min.js',
+        paths.jquery + 'dist/jquery.js',
+        paths.bxslider + 'dist/jquery.bxslider.min.js',
         'app.js'
     ],
     'public/js/app.js'

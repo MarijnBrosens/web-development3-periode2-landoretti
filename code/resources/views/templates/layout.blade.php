@@ -12,7 +12,9 @@
 
 @include('partials.nav')
 
-@yield('content')
+<div id="main">
+    @yield('content')
+</div>
 
 <h2>todo</h2>
 <ol>
