@@ -5,9 +5,23 @@
  */
 @import "tools/vars";
 @import "tools/sprites";
+@import "tools/clearfix";
 @import "tools/init";
+@import "tools/grid";
+
+/*
+* LAYOUTS
+*/
+@import "layouts/header";
+@import "layouts/nav";
+@import "layouts/footer";
+
+
+/*
+* MODULES
+*/
 
 /*
 * PAGES
 */
-@import "modules/home";
+@import "pages/home";

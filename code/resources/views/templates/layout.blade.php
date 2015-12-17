@@ -11,6 +11,7 @@
 <body>
 
 @include('partials.nav')
+
 @yield('content')
 
 <h2>todo</h2>
@@ -18,7 +19,6 @@
     <li>translate</li>
     <li>trans routes</li>
     <li>angular https://www.youtube.com/watch?v=QBdudSQ1aLg</li>
-    <li>favicon</li>
 </ol>
 
 <h2>sprites</h2>
@@ -49,6 +49,8 @@
 <i class="sprite sprite-nav-search"></i>
 <i class="sprite sprite-nav-user"></i>
 
+
+@include('partials.footer')
 
 </body>
 </html>
