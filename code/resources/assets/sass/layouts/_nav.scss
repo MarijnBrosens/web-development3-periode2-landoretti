@@ -11,10 +11,8 @@
         overflow: hidden;
         height: 50px;
     }
-    
-    &-main{
-        background: $brand-color-grey-silver;
-    }
+
+    &-main{ background: $brand-color-grey-silver; }
 
     ul{
         padding: 0;
@@ -27,25 +25,21 @@
         padding: 0 17px;
 
         a{
-            color: $brand-color-blue;
+            color: $brand-color-grey-dark;
             text-decoration: none;
             font-family: $font-family-base;
             font-size: 13px;
             padding: 0;
             margin: 0;
+            font-weight: bold;
 
-            &:hover{
-                color: $brand-color-cyan;
-            }
+
+            &:hover{ color: $brand-color-cyan; }
         }
 
-        i{
-            padding-right: 10px;
-        }
+        i{ padding-right: 10px; }
 
-        &:first-child{
-            padding-left: 0;
-        }
+        &:first-child{ padding-left: 0; }
         
         &:last-child{
             padding-right: 0;
@@ -100,6 +94,11 @@
         li{
             border-right: 1px solid black;
             padding: 0 22px;
+
+            a{
+                color: $brand-color-blue;
+                font-weight: normal;
+            }
         }
     }
 }
@@ -109,5 +108,11 @@
 
     li{
         padding: 0 10px;
+
+        a{
+            font-weight: normal;
+
+            &.active{ font-weight: bold; }
+        }
     }
 }

@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_clearfix.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_header.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/partials/footer.blade.php" />
-      <change type="DELETED" beforePath="D:\Documents\MCT\4e-jaar-2015-2016\Web development\periode-2\examen\Landoretti\code\resources\assets\sass\modules\_home.scss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_sprites.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_sprites.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/templates/layout.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/templates/layout.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -67,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/resources/views/templates/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.807693">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.06548673">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -80,8 +69,8 @@
       <file leaf-file-name="nav.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.923077">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state vertical-scroll-proportion="-11.576923">
+              <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -97,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_nav.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_nav.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49626866">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state vertical-scroll-proportion="-6.5454545">
+              <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -137,8 +126,8 @@
         <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/layouts/_header.scss" />
-        <option value="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" />
+        <option value="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
       </list>
     </option>
   </component>
@@ -512,7 +501,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450301268710</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="styling: header, nav">
+      <created>1450311343097</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450311343097</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -559,7 +554,8 @@
     <MESSAGE value="+ partials/nav" />
     <MESSAGE value="change route path" />
     <MESSAGE value="+ init.scss&#10;+ vars.scss&#10;+ sprites.scss" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ init.scss&#10;+ vars.scss&#10;+ sprites.scss" />
+    <MESSAGE value="styling: header, nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling: header, nav" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -785,22 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5384614">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/templates/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.807693">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.923077">
@@ -809,10 +789,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5384614">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5454545">
+          <caret line="115" column="9" selection-start-line="115" selection-start-column="9" selection-end-line="115" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.923077">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state vertical-scroll-proportion="-11.576923">
+          <caret line="35" column="78" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="78" />
           <folding />
         </state>
       </provider>
@@ -825,10 +821,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss">
+    <entry file="file://$PROJECT_DIR$/code/resources/views/templates/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49626866">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.06548673">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>

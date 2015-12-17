@@ -33,7 +33,7 @@
                 <ul class="locales">
                     <li><a href="/nl">NL</a></li>
                     <li><a href="/fr">FR</a></li>
-                    <li><a href="/en">EN</a></li>
+                    <li><a class="active" href="/en">EN(moet dynamisch active worden)</a></li>
                 </ul>
             </div>
         </div>
