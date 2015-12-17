@@ -1,0 +1,41 @@
+#home {
+
+    .wrapper {
+
+        padding: 50px 0;
+        @extend .clearfix;
+        width: 100%;
+
+        h1 {
+            line-height: 40px;
+            margin-top: 0;
+            margin-bottom: 60px;
+            @extend .text-center;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-weight: lighter;
+            color: $brand-color-grey-dark;
+        }
+
+        p {
+            font-size: 15px;
+            padding: 0 50px;
+            color: $brand-color-grey-dark;
+            line-height: 20px;
+        }
+
+        &-how-does-it-work {
+            background: white;
+        }
+
+        &-most-popular {
+            background: #f3f3f3;
+            padding-bottom: 100px;
+        }
+    }
+
+}

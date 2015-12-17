@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('templates/layout');
+    return view('home/index');
 });
 
 Route::get('/{locale}', function ($locale) {
