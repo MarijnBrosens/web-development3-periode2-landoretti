@@ -1,0 +1,20 @@
+.breadcrumb{
+    color: $brand-color-cyan;
+    list-style: none;
+
+    a{
+        color: $brand-color-cyan;
+        text-decoration: none;
+    }
+
+    li{
+        float: left;
+    }
+
+    li + li{
+
+        &::before{
+            content: "\0000a0>\0000a0";
+        }
+    }
+}

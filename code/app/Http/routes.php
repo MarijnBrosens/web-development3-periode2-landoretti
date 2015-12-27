@@ -15,8 +15,13 @@ Route::get('/', function () {
     return view('home/index');
 });
 
+Route::get('/art', function () {
+    return view('art/index');
+});
+/*
 Route::get('/{locale}', function ($locale) {
     App::setLocale($locale);
 
     return view('home/index');
 });
+*/
