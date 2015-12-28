@@ -1,6 +1,6 @@
 @extends('templates.layout')
 
-@section('title', 'Blog')
+@section('title', 'Art')
 
 @section('content')
 
@@ -28,10 +28,30 @@
             </article>
         </div>
     </header>
-    <div class="container">
-        <div class="sort-by">Sort By</div>
+    <div class="filter-wrapper">
+        <div class="container">
+            <div class="filter__inner-container">
+
+                <div class="sort-by">
+                    <span class="sort-by__title">Sort By: </span>
+                    <ul class="sort-by__list">
+                        <li class="sort-by__text active">ending soonest</li>
+                        <li class="sort-by__text">ending latest</li>
+                        <li class="sort-by__text">new auctions</li>
+                        <li class="sort-by__text">popular auctions</li>
+                    </ul>
+                </div>
+
+                <div class="advanced-options">
+                    Advanced Options
+                    <i class="sprite sprite-filter-advanced-options-arrow"></i>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-    <hr>
+
     <div class="container">
         {!! Breadcrumbs::render('art') !!}
     </div>
