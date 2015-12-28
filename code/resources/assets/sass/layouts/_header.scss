@@ -10,5 +10,10 @@
         box-shadow: $logo-shadow;
         position: absolute;
         top: -4px;
+        transition: .3s;
+
+        &:hover{
+            box-shadow: $logo-shadow-hover;
+        }
     }
 }

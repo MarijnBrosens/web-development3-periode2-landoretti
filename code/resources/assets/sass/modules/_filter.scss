@@ -70,11 +70,17 @@
     color: $brand-color-blue;
     top: -7px;
     position: relative;
+    transition: .3s;
 
     i{
         top: 5px;
         margin-left: 20px;
         position: relative;
+    }
+
+    &:hover{
+        cursor: pointer;
+        color: $brand-color-cyan;
     }
 }
 

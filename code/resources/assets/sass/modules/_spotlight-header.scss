@@ -79,13 +79,19 @@
             font-weight: 600;
             transition: .3s;
 
-            &:hover{
-                background: rgba(white,.9);
+            i{
+                position: relative;
+                margin-left: 20px;
+                transition: .3s;
+                top: 3px;
             }
 
-            i{
-                position: absolute;
-                margin-left: 20px;
+            &:hover{
+                background: rgba(white,.95);
+
+                i{
+                    margin-left: 30px;
+                }
             }
         }
 
