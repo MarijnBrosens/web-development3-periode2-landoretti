@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>@yield('title')</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     {!! Html::style('css/app.css') !!}

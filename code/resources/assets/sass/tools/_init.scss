@@ -9,6 +9,15 @@ body{
     margin: 0;
 }
 
+::selection {
+    background: $brand-color-cyan;
+    color: white;
+}
+::-moz-selection {
+    background: $brand-color-cyan;
+    color: white;
+}
+
 #main{ margin-top: 104px; }
 
 h1{

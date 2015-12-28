@@ -1,0 +1,93 @@
+.spotlight-header{
+    height: 432px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $brand-color-grey-silver;
+
+    .container{
+        position: relative;
+        height: 100%;
+    }
+
+    &__info{
+        color: white;
+        font-family: $font-family-base;
+        display: block;
+        background: $brand-color-blue-transparant;
+        width: 314px;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        top: 50px;
+
+        &::before{
+            content:"";
+            left: -16px;
+            top: -16px;
+            position: absolute;
+            @extend .sprite;
+            @extend .sprite-circle-icon;
+        }
+
+        &--title{
+            font-family: $font-family-base;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 21px;
+            padding: 30px 30px 20px;
+            margin: 0;
+            color: white;
+            border-bottom: 1px solid rgba(#2b45b5,0.65);
+        }
+
+        &--text{
+            padding: 16px 30px 16px;
+            margin: 0;
+            line-height: 21px;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        &--price{
+
+            font-size: 18px;
+
+            &-text{
+                font-size: 15px;
+                padding: 0 30px;
+                font-family: $font-family-base;
+                font-weight: 700;
+            }
+
+        }
+
+        &--btn{
+            padding: 30px;
+            background: white;
+            display: block;
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $brand-color-cyan;
+            text-decoration: none;
+            position: absolute;
+            width: calc(100% - 60px);
+            bottom: 0;
+            font-weight: 600;
+            transition: .3s;
+
+            &:hover{
+                background: rgba(white,.9);
+            }
+
+            i{
+                position: absolute;
+                margin-left: 20px;
+            }
+        }
+
+    }
+}
