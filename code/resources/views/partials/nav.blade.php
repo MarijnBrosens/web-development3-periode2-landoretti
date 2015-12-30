@@ -32,10 +32,11 @@
                 </ul>
 
                 <ul class="locales">
-                    <li><a href="/nl">NL</a></li>
-                    <li><a href="/fr">FR</a></li>
-                    <li><a class="active" href="/en">EN(moet dynamisch active worden)</a></li>
+                    <li><a class="{!! Config::get('app.locale') == 'nl' ? 'active' : '' !!}" href="/nl">NL</a></li>
+                    <!-- <li><a class="{!! Config::get('app.locale') == 'fr' ? 'active' : '' !!}" href="/fr">FR</a></li> -->
+                    <li><a class="{!! Config::get('app.locale') == 'en' ? 'active' : '' !!}" href="/en">EN</a></li>
                 </ul>
+
             </div>
         </div>
     </div>
