@@ -53,7 +53,6 @@ return [
     */
 
     'locale' => 'en',
-
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -154,7 +153,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
         Dimsav\Translatable\TranslatableServiceProvider::class,
-
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class
     ],
 
     /*
@@ -207,6 +206,7 @@ return [
         'Image'     => Intervention\Image\Facades\Image::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
+        'LaravelLocalization'   => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class
 
     ],
 

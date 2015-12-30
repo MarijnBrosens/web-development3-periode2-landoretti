@@ -10,14 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+{
+    Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
-Route::get('/', function () {
-    return view('home/index');
+    Route::get('/art', ['as' => 'art', 'uses' => 'AuctionController@index'] );
 });
-
-
-Route::get('/{locale}/art', 'AuctionController@index');
-
 /*
 Route::get('/{locale}', function ($locale) {
     App::setLocale($locale);

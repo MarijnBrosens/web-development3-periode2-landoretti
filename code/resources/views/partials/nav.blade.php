@@ -22,12 +22,13 @@
         <div class="container">
             <div class="nav">
                 <ul>
-                    <li><a href="/" >{{ trans('nav.home') }}</a></li>
-                    <li><a href="/art">{{ trans('nav.art') }}</a></li>
+                    <li>{!! link_to_route('home', $title = trans('nav.home') , $parameters = array(), $attributes = array()) !!}</li>
+                    <li>{!! link_to_route('art', $title = trans('nav.art') , $parameters = array(), $attributes = array()) !!}</li>
                     <li><a href="/isearch">{{ trans('nav.isearch') }}</a></li>
                     <li><a href="/auctions">{{ trans('nav.myauctions') }}</a></li>
                     <li><a href="/bids">{{ trans('nav.mybids') }}</a></li>
                     <li><a href="/contact">{{ trans('nav.contact') }}</a></li>
+
                 </ul>
 
                 <ul class="locales">

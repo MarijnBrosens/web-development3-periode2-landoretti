@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
     {!! Html::style('css/app.css') !!}
-    {!! Html::script('js/app.js') !!}
+
 </head>
 <body>
 
@@ -53,6 +53,8 @@
 
 
 @include('partials.footer')
+
+{!! Html::script('js/app.js') !!}
 
 </body>
 </html>
