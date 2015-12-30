@@ -65,7 +65,7 @@
     <div class="container">
         {!! Breadcrumbs::render('art') !!}
 
-        {!! $auctions->render() !!}
+        @include('partials.pagination', ['paginator' => $auctions])
     </div>
 
 
@@ -106,7 +106,7 @@
     </div>
 
     <div class="container">
-        {!! $auctions->render() !!}
+        @include('partials.pagination', ['paginator' => $auctions])
     </div>
 
 
