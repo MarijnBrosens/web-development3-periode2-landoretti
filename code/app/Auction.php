@@ -1,0 +1,32 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Auction extends Model
+{
+    use \Dimsav\Translatable\Translatable;
+
+    protected $table = 'auctions';
+    public $timestamps = true;
+    public $translatedAttributes = ['title', 'description','condition','origin'];
+
+    protected $guarded = ['id'];
+
+    /*
+     * An auction has an artist
+     */
+    public function artist()
+    {
+        return $this->belongsTo('App\Artist');
+    }
+
+    /*
+     * An auction belongs to an user
+     */
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+}
