@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/code/database/migrations/2014_10_12_000000_create_users_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_grid.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/composer.json" afterPath="$PROJECT_DIR$/code/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/composer.lock" afterPath="$PROJECT_DIR$/code/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/index.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -542,7 +539,13 @@
       <option name="project" value="LOCAL" />
       <updated>1451433674185</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="+ userstable">
+      <created>1451433694468</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1451433694468</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -601,7 +604,8 @@
     <MESSAGE value="+ breadcrumbs" />
     <MESSAGE value="+ (fast create)" />
     <MESSAGE value="+ multilang support" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ multilang support" />
+    <MESSAGE value="+ userstable" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ userstable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

@@ -50,11 +50,66 @@
             </div>
 
         </div>
+
+        http://sachinchoolur.github.io/lightslider/index.html
+
+        https://github.com/czim/laravel-filter
+
+        http://codepen.io/javve/pen/bBfgD
+
+        http://www.listjs.com/examples/pagination
+
+        http://stackoverflow.com/questions/27673115/change-update-page-content-without-reloading-page-by-ajax-laravel
     </div>
 
     <div class="container">
         {!! Breadcrumbs::render('art') !!}
+
+        {!! $auctions->render() !!}
     </div>
+
+
+
+    <div class="grid-all-auctions">
+
+        <div class="container">
+
+            <div class="row">
+
+                @foreach($auctions as $key=>$item)
+
+                    @if($key == 0)
+
+                        <div class="grid-all-auctions__item grid-all-auctions__first-item">
+                            <figure class="grid-all-auctions__first-item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
+                                <h2>{{$item->title}}</h2>
+                                <p>dit is wss een info vak, navragen aan sam</p>
+                            </figure>
+                        </div>
+
+                    @else
+
+                        <div class="grid-all-auctions__item">
+                            <figure class="grid-all-auctions__item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
+                            </figure>
+                            <h2>{{$item->title}}</h2>
+                        </div>
+
+                    @endif
+
+                @endforeach
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        {!! $auctions->render() !!}
+    </div>
+
+
 
 </main>
 
