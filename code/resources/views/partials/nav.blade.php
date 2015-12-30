@@ -1,7 +1,7 @@
 <div id="header">
     <div class="nav-sub">
         <div class="container">
-            <a href="/"><i class="sprite sprite-nav-logo logo"></i></a>
+            {!! link_to_route('home', '' , array(), ['class' => 'sprite sprite-nav-logo logo']) !!}
             <div class="nav nav-lined clearfix">
                 <ul>
                     <li><a href="/watchlist" ><i class="sprite sprite-nav-menu"></i>{{ trans('nav.watchlist') }}</a></li>

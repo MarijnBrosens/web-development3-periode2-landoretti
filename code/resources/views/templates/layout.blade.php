@@ -51,6 +51,20 @@
 <i class="sprite sprite-nav-search"></i>
 <i class="sprite sprite-nav-user"></i>
 
+<h1>used plugins</h1>
+<h3>laravel</h3>
+<ul>
+    <li>"intervention/image"</li>
+    <li>"barryvdh/laravel-debugbar"</li>
+    <li>"davejamesmiller/laravel-breadcrumbs"</li>
+    <li>"dimsav/laravel-translatable"</li>
+    <li>"mcamara/laravel-localization"</li>
+</ul>
+<h3>js</h3>
+<ul>
+    <li>http://bxslider.com</li>
+</ul>
+
 
 @include('partials.footer')
 

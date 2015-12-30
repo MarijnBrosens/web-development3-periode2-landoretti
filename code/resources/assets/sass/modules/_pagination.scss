@@ -35,4 +35,10 @@
     &__arrow-right{
         margin-left: 18px;
     }
+
+    .disabled{
+        pointer-events: none;
+        cursor: default;
+        color: $brand-color-grey-silver;
+    }
 }

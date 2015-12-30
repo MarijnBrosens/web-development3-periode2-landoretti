@@ -19,10 +19,10 @@
                     }}
                 </p>
                 <span class="spotlight-header__info--price-text">
-                    Price: <span class="spotlight-header__info--price">&euro;320</span>
+                    {{ trans('art.price') }}: <span class="spotlight-header__info--price">&euro;320</span>
                 </span>
                 <a href="#" class="spotlight-header__info--btn">
-                    Visit Auction <i class="sprite sprite-banner-info-arrow-right"></i>
+                    {{ trans('art.visit-auction') }} <i class="sprite sprite-banner-info-arrow-right"></i>
                 </a>
 
             </article>
@@ -33,17 +33,17 @@
             <div class="filter__inner-container">
 
                 <div class="sort-by">
-                    <span class="sort-by__title">Sort By: </span>
+                    <span class="sort-by__title">{{ trans('art.sort-by') }}: </span>
                     <ul class="sort-by__list">
-                        <li class="sort-by__text active">ending soonest</li>
-                        <li class="sort-by__text">ending latest</li>
-                        <li class="sort-by__text">new auctions</li>
-                        <li class="sort-by__text">popular auctions</li>
+                        <li class="sort-by__text active">{{ trans('art.endings-soonest') }}</li>
+                        <li class="sort-by__text">{{ trans('art.endings-latest') }}</li>
+                        <li class="sort-by__text">{{ trans('art.new-auctions') }}</li>
+                        <li class="sort-by__text">{{ trans('art.popular-auctions') }}</li>
                     </ul>
                 </div>
 
                 <div class="advanced-options">
-                    Advanced Options
+                    {{ trans('art.advanced-options') }}
                     <i class="sprite sprite-filter-advanced-options-arrow"></i>
                 </div>
 
