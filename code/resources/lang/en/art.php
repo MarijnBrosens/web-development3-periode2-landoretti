@@ -19,4 +19,10 @@ return [
     'new-auctions' => 'new auctions',
     'popular-auctions' => 'popular auctions',
     'advanced-options' => 'Advanced Options',
+
+    /*
+     * art
+     * no auction
+     */
+    'no-auction' => 'No auctions available',
 ];

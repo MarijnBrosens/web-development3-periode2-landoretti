@@ -19,4 +19,10 @@ return [
     'new-auctions' => 'nieuwe veilingen',
     'popular-auctions' => 'populaire veilingen',
     'advanced-options' => 'Geavenceerde Opties',
+
+    /*
+     * art
+     * no auction
+     */
+    'no-auction' => 'Geen veilingen beschikbaar',
 ];
