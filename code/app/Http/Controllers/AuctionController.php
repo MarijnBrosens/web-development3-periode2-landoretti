@@ -21,6 +21,11 @@ class AuctionController extends Controller
     {
         $locale = App::getLocale();
 
+        $newest = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'created_at','DESC' )
+            ->first();
+
         /**
          * Return all acutions
          */
@@ -29,7 +34,7 @@ class AuctionController extends Controller
             ->orderBy( 'end_date','DESC' )
             ->paginate(9);
 
-        return view( 'art.index' , array( 'auctions' => $auctions ) );
+        return view( 'art.index' , array( 'auctions' => $auctions , 'newest' => $newest ) );
     }
 
     /**

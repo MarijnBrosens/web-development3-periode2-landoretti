@@ -28,7 +28,8 @@ class HomeController extends Controller
         $auctions = Auction::translatedIn($locale)
             ->where( 'end_date' , '>=', Carbon::now() )
             ->orderBy( 'end_date','DESC' )
-            ->take(4);
+            ->take(4)
+            ->get();
 
         /**
          * Return 3 latest auctions

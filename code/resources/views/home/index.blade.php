@@ -6,17 +6,21 @@
 
     <main id="home">
 
-        <ul class="bxslider home-slider">
+        @if( count( $auctions ) )
 
-            @foreach($popular as $auction)
+            <ul class="bxslider home-slider">
 
-                <li>
-                    <img src="{{$auction->image_artwork}}" alt="{{$auction->title}}" title="{{$auction->description}}"/>
-                </li>
+                @foreach($auctions as $auction)
 
-            @endforeach
+                    <li>
+                        <img src="{{$auction->image_artwork}}" alt="{{$auction->title}}" title="{{$auction->description}}"/>
+                    </li>
 
-        </ul>
+                @endforeach
+
+            </ul>
+
+        @endif
 
 
         <div class="wrapper wrapper-how-does-it-work">
@@ -45,33 +49,34 @@
 
 
 
-        @if(count($popular))
-        <div class="wrapper wrapper-most-popular">
-            <div class="container">
-                <h1>{{ trans('home.title-most-popular') }} <i class="sprite sprite-home-arrow-down-popular"></i></h1>
+        @if( count( $popular ) )
 
-                <div class="clearfix">
+            <div class="wrapper wrapper-most-popular">
+                <div class="container">
+                    <h1>{{ trans('home.title-most-popular') }} <i class="sprite sprite-home-arrow-down-popular"></i></h1>
 
-                    <ul class="grid-most-popular">
+                    <div class="clearfix">
 
-                        @foreach($popular as $auction)
+                        <ul class="grid-most-popular">
 
-                            <a href="{{ route( 'show', $parameters = array( $auction->slug ), $attributes = array() ) }}" class="item" style="background-image: url({{$auction->image_artwork}}});">
+                            @foreach($popular as $auction)
 
-                                <div class="overlay">
-                                    <i class="sprite sprite-home-hover-search-icon-big"></i>
-                                </div>
+                                <a href="{{ route( 'show', $parameters = array( $auction->slug ), $attributes = array() ) }}" class="item" style="background-image: url({{$auction->image_artwork}}});">
 
-                            </a>
+                                    <div class="overlay">
+                                        <i class="sprite sprite-home-hover-search-icon-big"></i>
+                                    </div>
 
-                        @endforeach
+                                </a>
 
-                    </ul>
+                            @endforeach
+
+                        </ul>
+                    </div>
                 </div>
 
-                @endif
+            @endif
 
-            </div>
         </div>
 
     </main>
