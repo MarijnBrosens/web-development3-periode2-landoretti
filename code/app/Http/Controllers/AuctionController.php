@@ -19,12 +19,15 @@ class AuctionController extends Controller
      */
     public function index()
     {
-
         $locale = App::getLocale();
 
-        // multi lanugage : https://laravel-news.com/2015/09/how-to-add-multilingual-support-to-eloquent/
-
-        $auctions = Auction::translatedIn($locale)->where( 'end_date' , '>=', Carbon::now() )->paginate(9);
+        /**
+         * Return all acutions
+         */
+        $auctions = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'end_date','DESC' )
+            ->paginate(9);
 
         return view( 'art.index' , array( 'auctions' => $auctions ) );
     }
@@ -60,6 +63,9 @@ class AuctionController extends Controller
     {
         $locale = App::getLocale();
 
+        /*
+        * Return current auction
+        */
         $auction = Auction::translatedIn( $locale )
             ->whereTranslation( 'slug', $slug )
             ->first();

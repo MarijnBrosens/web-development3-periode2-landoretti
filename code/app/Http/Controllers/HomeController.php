@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\App;
+use App\Auction;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -16,7 +19,28 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.index');
+        $locale = App::getLocale();
+
+        /**
+         * Return 4 latest auctions
+         * Banner
+         */
+        $auctions = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'end_date','DESC' )
+            ->take(4);
+
+        /**
+         * Return 3 latest auctions
+         * Popular
+         */
+        $popular = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'end_date','DESC' )
+            ->take(3)
+            ->get();
+
+        return view( 'home.index' , array( 'auctions' => $auctions ,'popular' => $popular) );
     }
 
     /**
