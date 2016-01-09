@@ -10,7 +10,12 @@ class Auction extends Model
 
     protected $table = 'auctions';
     public $timestamps = true;
-    public $translatedAttributes = ['title', 'description','condition','origin'];
+    public $translatedAttributes = [ 'title', 'slug', 'description', 'condition', 'origin' ];
+
+    protected $fillable = [
+        'end_date',
+        'slug'
+    ];
 
     protected $guarded = ['id'];
 

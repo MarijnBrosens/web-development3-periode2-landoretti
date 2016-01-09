@@ -74,32 +74,40 @@
 
         <div class="container">
 
-            <div class="row">
+            @if(count( $auctions ) )
 
-                @foreach($auctions as $key=>$item)
+                <div class="row">
 
-                    @if($key == 0)
+                    @foreach($auctions as $key=>$item)
 
-                        <div class="grid-all-auctions__item grid-all-auctions__first-item">
-                            <figure class="grid-all-auctions__first-item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
+                        @if( $key == 0 )
+
+                            <div class="grid-all-auctions__item grid-all-auctions__first-item">
+                                <figure class="grid-all-auctions__first-item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
+                                    <h2>{{$item->title}}</h2>
+                                    <p>dit is wss een info vak, navragen aan sam</p>
+                                </figure>
+                            </div>
+
+                        @else
+
+                            <div class="grid-all-auctions__item">
+                                <figure class="grid-all-auctions__item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
+                                </figure>
                                 <h2>{{$item->title}}</h2>
-                                <p>dit is wss een info vak, navragen aan sam</p>
-                            </figure>
-                        </div>
+                                {!! link_to_route('show', $title = trans('art.visit-auction') , $parameters = array($item->slug), $attributes = array()) !!}
+                            </div>
 
-                    @else
+                        @endif
 
-                        <div class="grid-all-auctions__item">
-                            <figure class="grid-all-auctions__item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
-                            </figure>
-                            <h2>{{$item->title}}</h2>
-                        </div>
+                    @endforeach
+                </div>
 
-                    @endif
+            @else
 
-                @endforeach
+                <h1>{{ trans('art.no-auction')}}</h1>
 
-            </div>
+            @endif
 
         </div>
 
