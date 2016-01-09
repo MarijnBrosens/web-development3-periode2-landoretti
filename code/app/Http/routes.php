@@ -1,21 +1,34 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+ * Prefixed routes
+ */
 Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 {
     Route::get('/', ['as' => 'home', 'uses' => 'HomeController@index']);
 
     Route::get('/art', ['as' => 'art', 'uses' => 'AuctionController@index'] );
+
+    Route::get('/art/{slug}', ['as' => 'show', 'uses' => 'AuctionController@show'] );
 });
+
+
+/*
+ * Authentication routes
+ */
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+/*
+ * Registration routes
+ */
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+
+
+
 /*
 Route::get('/{locale}', function ($locale) {
     App::setLocale($locale);
@@ -52,6 +65,7 @@ Route::get('create', function() {
 
     foreach (['en', 'nl'] as $locale) {
         $auction->translateOrNew($locale)->title = "Title {$locale}";
+        $auction->translateOrNew($locale)->slug = "Slug-{$locale}";
         $auction->translateOrNew($locale)->description = "Description {$locale}";
         $auction->translateOrNew($locale)->condition = "condition {$locale}";
         $auction->translateOrNew($locale)->origin = "origin {$locale}";
