@@ -9,7 +9,7 @@
                         <li><a href="/profile"><i class="sprite sprite-nav-user"></i>{{ trans('nav.profile') }}</a></li>
                         <li><a href="/logout">{{ trans('nav.logout') }}</a></li>
                     @else
-                        <li><a href="/login">{{ trans('nav.register') }}</a></li>
+                        <li>{!! link_to_route('getRegister', $title = trans('nav.register') , $parameters = array(), $attributes = array()) !!}</li>
                         <li><a href="#" id="login">{{ trans('nav.login') }}</a></li>
                     @endif
 

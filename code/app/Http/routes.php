@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * Prefixed routes
  */
 Route::group(['prefix' => LaravelLocalization::setLocale()], function()
@@ -10,20 +10,20 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     Route::get('/art', ['as' => 'art', 'uses' => 'AuctionController@index'] );
 
     Route::get('/art/{slug}', ['as' => 'show', 'uses' => 'AuctionController@show'] );
+
+    /**
+     * Authentication routes
+     */
+    Route::post('auth/login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin' ]);
+    Route::get('auth/logout', 'Auth\AuthController@getLogout');
+
+    /**
+     * Registration routes
+     */
+    Route::get('register', ['as' => 'getRegister', 'uses' =>  'Auth\AuthController@getRegister' ]);
+    Route::post('auth/register', 'Auth\AuthController@postRegister');
+
 });
-
-
-/*
- * Authentication routes
- */
-Route::post('auth/login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin' ]);
-Route::get('auth/logout', 'Auth\AuthController@getLogout');
-
-/*
- * Registration routes
- */
-Route::get('auth/register', 'Auth\AuthController@getRegister');
-Route::post('auth/register', 'Auth\AuthController@postRegister');
 
 
 

@@ -1,6 +1,6 @@
 @extends('templates.layout')
 
-@section('title', 'Art')
+@section('title', $auction->title)
 
 @section('content')
 
