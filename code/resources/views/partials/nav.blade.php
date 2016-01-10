@@ -7,7 +7,7 @@
                     @if(Auth::check())
                         <li><a href="/watchlist" ><i class="sprite sprite-nav-menu"></i>{{ trans('nav.watchlist') }}</a></li>
                         <li><a href="/profile"><i class="sprite sprite-nav-user"></i>{{ trans('nav.profile') }}</a></li>
-                        <li><a href="/logout">{{ trans('nav.logout') }}</a></li>
+                        <li><a href="/auth/logout">{{ trans('nav.logout') }}</a></li>
                     @else
                         <li>{!! link_to_route('getRegister', $title = trans('nav.register') , $parameters = array(), $attributes = array()) !!}</li>
                         <li><a href="#" id="login">{{ trans('nav.login') }}</a></li>
