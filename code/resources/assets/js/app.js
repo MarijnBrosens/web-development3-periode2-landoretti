@@ -4,6 +4,17 @@
 
 $(document).ready(function(){
 
+    $("#login").on('mouseenter', function() {
+        $('#login').toggle();
+        $('#login-form').toggle();
+        $('#login-form__user').focus();
+    });
+
+    $("#login-form").on('mouseleave', function() {
+        $('#login').toggle();
+        $('#login-form').toggle();
+    });
+
     /*
      * INIT SLIDER
      * homepage

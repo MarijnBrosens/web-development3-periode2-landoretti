@@ -8,6 +8,8 @@ return [
     'login' => 'AANMELDEN',
     'logout' => 'AFMELDEN',
     'register' => 'REGISTREREN',
+    'user' => 'Gebruiker',
+    'password' => 'Wachtwoord',
     'profile' => 'PROFIEL',
     'watchlist' => 'FAVORIETEN',
 

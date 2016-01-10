@@ -8,6 +8,8 @@ return [
     'login' => 'LOGIN',
     'logout' => 'LOGOUT',
     'register' => 'REGISTER',
+    'user' => 'User',
+    'password' => 'Password',
     'profile' => 'PROFILE',
     'watchlist' => 'WATCHLIST',
 
