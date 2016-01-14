@@ -17,13 +17,13 @@
 
                 @if(!Auth::check())
 
-                    <form method="POST" action="auth/login" id="login-form">
+                    {!! Form::open(array('route' => 'postLogin', 'method' => 'post' ,'id' => 'login-form')) !!}
                         {!! csrf_field() !!}
                         <input id="login-form__user" type="text" name="email" value="{{ old('email') }}" placeholder="{{ trans('nav.user') }}">
                         <input id="login-form__password" type="password" name="password" id="password" placeholder="{{ trans('nav.password') }}">
                         <button class="login-form__submit" type="submit"><i class="sprite sprite-nav-search"></i></button>
-                    </form>
-
+                    {!! Form::close() !!}
+                    
                 @endif
 
                 <div class="search">

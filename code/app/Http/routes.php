@@ -14,7 +14,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     /**
      * Authentication routes
      */
-    Route::post('auth/login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin' ]);
+    Route::get('login', ['as' => 'getLogin', 'uses' => 'Auth\AuthController@getLogin' ]);
+    Route::post('login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin' ]);
     Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
     /**
