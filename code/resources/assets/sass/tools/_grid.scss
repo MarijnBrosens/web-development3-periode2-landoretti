@@ -4,11 +4,30 @@
 }
 
 
-.row{ width: 100%; }
+.row{
+    width: 100%;
 
-.col-4{
+    &--grid{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+
+.col{
     float: left;
-    width: 33.33%;
+    position: relative;
+    min-height: 1px;
+
+    &-4{
+        width: 33.33%;
+    }
+
+    &-6{
+        width: 50%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
 }
 
 .grid-most-popular{
