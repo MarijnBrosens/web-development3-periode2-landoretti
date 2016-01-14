@@ -1,0 +1,32 @@
+h1{
+    font-weight: lighter;
+    color: $brand-color-blue;
+    font-size: 40px;
+}
+
+
+
+.text{
+    &-center,
+    &--center{
+        text-align: center;
+    }
+
+    &__weight{
+        &--light{
+            font-weight: 300;
+        }
+
+        &--mid{
+            font-weight: 400;
+        }
+
+        &--bold{
+            font-weight: 600;
+        }
+    }
+
+    &--grey{
+        color: $brand-color-grey-mid;
+    }
+}
