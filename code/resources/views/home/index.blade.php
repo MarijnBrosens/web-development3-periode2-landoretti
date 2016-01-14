@@ -28,17 +28,17 @@
                 <h1>{{ trans('home.title-how-does-it-work') }}</h1>
 
                 <div class="row text-center">
-                    <div class="col-4">
+                    <div class="col col-4">
                         <i class="sprite sprite-home-signup"></i>
                         <h2>{{ trans('home.sign-up') }}</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col col-4">
                         <i class="sprite sprite-home-makedeals"></i>
                         <h2>{{ trans('home.make-deals') }}</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col col-4">
                         <i class="sprite sprite-home-everyonehappy"></i>
                         <h2>{{ trans('home.everyone-happy') }}</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
