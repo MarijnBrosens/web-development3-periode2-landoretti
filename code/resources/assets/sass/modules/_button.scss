@@ -1,0 +1,16 @@
+.button{
+    &--primary{
+        background: $brand-color-cyan;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+        color: white;
+        text-transform: uppercase;
+        width: 270px;
+        transition: $transition-time-fast;
+        
+        &:hover{
+            background: $brand-color-cyan-hover;
+        }
+    }
+}

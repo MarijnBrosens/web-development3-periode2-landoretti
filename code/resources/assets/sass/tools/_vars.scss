@@ -16,8 +16,11 @@ $font-size-title: 3em;
 $brand-color-blue: #0a1e75;
 $brand-color-blue-transparant: rgba(#0120a6, 0.65);
 $brand-color-cyan: #01a6a0;
+$brand-color-cyan-hover: darken($brand-color-cyan,5%);
 
 /*
+ * COLORS
+ *
  * grey
  */
 $brand-color-black: #000000;
@@ -28,6 +31,27 @@ $brand-color-grey-silver: #eaeaea;
 $brand-color-grey-lighter: #f4f4f4;
 
 $brand-color-stroke-grey: #a4a4a4;
+$brand-color-stroke-grey-light: #e5e5e5;
 
+/*
+ * COLORS
+ *
+ * error
+ */
+$error-red-bg: #fff1f1;
+$error-red-text: #ff0215;
+
+/*
+ * SHADOWS
+ *
+ * logo
+ */
 $logo-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.19);
 $logo-shadow-hover: 0px 0px 34px 0px rgba(0, 0, 0, 0.29);
+
+/*
+ * TRANSITIONS
+ */
+$transition-time-fast: 0.3s;
+$transition-time-mid: 0.5s;
+$transition-time-slow: 0.7s;
