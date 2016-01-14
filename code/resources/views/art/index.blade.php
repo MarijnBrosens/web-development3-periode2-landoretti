@@ -81,7 +81,7 @@
 
             @if(count( $auctions ) )
 
-                <div class="row">
+                <div class="row--full-width">
 
                     @foreach($auctions as $key=>$item)
 

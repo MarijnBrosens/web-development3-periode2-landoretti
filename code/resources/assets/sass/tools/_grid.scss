@@ -5,11 +5,11 @@
 
 
 .row{
-    width: 100%;
+    margin-left: -30px;
+    margin-right: -30px;
 
-    &--grid{
-        margin-left: -30px;
-        margin-right: -30px;
+    &--full-width{
+        width: 100%;
     }
 }
 
@@ -88,7 +88,7 @@
     clear: both;
     @extend .clearfix;
 
-    .row{
+    .row--full-width{
         margin-right: -8px;
         width: auto;
     }

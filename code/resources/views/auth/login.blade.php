@@ -14,7 +14,7 @@
 
         {!! Form::open(array('route' => 'postLogin', 'method' => 'post','class' => 'form--primary')) !!}
             {!! csrf_field() !!}
-            <div class="row--grid">
+            <div class="row">
                     <div class="col col-6">
                         <input class="input--primary" type="text" name="email" value="{{ old('email') }}" placeholder="{{ trans('nav.user') }}">
 
