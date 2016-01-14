@@ -5,16 +5,12 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_error-message.scss" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_login.scss" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Http/breadcrumbs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/auth/login.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/Auth/AuthController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/errors/message.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/errors/message.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/routes.php" afterPath="$PROJECT_DIR$/code/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,8 +43,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6153846">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="21" />
+            <state vertical-scroll-proportion="-6.769231">
+              <caret line="17" column="44" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -67,17 +63,17 @@
       <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.076923">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="41" />
+            <state vertical-scroll-proportion="-11.0">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="77" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spotlight-header.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spotlight-header.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.302926">
+            <state vertical-scroll-proportion="-6.769231">
               <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <marker date="1452733298583" expanded="true" signature="354:648" placeholder="..." />
@@ -116,24 +112,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.461538">
+            <state vertical-scroll-proportion="0.8709122">
               <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
               <folding>
                 <element signature="e#663#723#0#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.076923">
-              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -202,11 +188,11 @@
         <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_login.scss" />
         <option value="$PROJECT_DIR$/code/app/Http/Controllers/Auth/AuthController.php" />
         <option value="$PROJECT_DIR$/code/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php" />
-        <option value="$PROJECT_DIR$/code/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
+        <option value="$PROJECT_DIR$/code/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
       </list>
     </option>
   </component>
@@ -908,7 +894,19 @@
       <option name="project" value="LOCAL" />
       <updated>1452731365470</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="+ partial spotlight-header">
+      <created>1452733505680</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1452733505680</updated>
+    </task>
+    <task id="LOCAL-00039" summary="login: action route /auth/auth fix">
+      <created>1452733920991</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1452733920991</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView">
@@ -957,8 +955,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ debugbar&#10;" />
-    <MESSAGE value="+ breadcrumbs&#10;" />
     <MESSAGE value="+ spotlight header" />
     <MESSAGE value="+ sort-by filter" />
     <MESSAGE value="+ breadcrumbs" />
@@ -982,7 +978,9 @@
     <MESSAGE value="+ register" />
     <MESSAGE value="register all fields" />
     <MESSAGE value="+ errors.message" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ errors.message" />
+    <MESSAGE value="+ partial spotlight-header" />
+    <MESSAGE value="login: action route /auth/auth fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="login: action route /auth/auth fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1282,14 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/modules/_login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.384617">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/art/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34079173">
@@ -1308,22 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6153846">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.076923">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6415095">
@@ -1332,28 +1306,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.461538">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state vertical-scroll-proportion="-6.769231">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
-            <element signature="e#663#723#0#HTML" expanded="true" />
+            <marker date="1452733298583" expanded="true" signature="354:648" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
+    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/modules/_login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.076923">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="19" />
+        <state vertical-scroll-proportion="-36.384617">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1366,12 +1332,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php">
+    <entry file="file://$PROJECT_DIR$/code/resources/views/auth/register.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.302926">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.769231">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.0">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9466437">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8709122">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
-            <marker date="1452733298583" expanded="true" signature="354:648" placeholder="..." />
+            <element signature="e#663#723#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
