@@ -7,12 +7,19 @@
     @include('partials.spotlight-header')
 
     <div class="container">
+        <div class="clearfix">
+            {!! Breadcrumbs::render('login') !!}
+        </div>
+    </div>
 
-        <h1>Login</h1>
+
+    <div class="container">
+
+        <h1 class="text--grey">Login</h1>
 
         @include('errors.message')
 
-        {!! Form::open(array('route' => 'postLogin', 'method' => 'post','class' => 'form--primary')) !!}
+        {!! Form::open(array('route' => 'postLogin', 'method' => 'post', 'class' => 'form--primary')) !!}
             {!! csrf_field() !!}
             <div class="row">
                     <div class="col col-6">

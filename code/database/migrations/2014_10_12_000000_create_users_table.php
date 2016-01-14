@@ -22,8 +22,8 @@ class CreateUsersTable extends Migration
             $table->string('city', 255);
             $table->string('address', 255);
             $table->string('phone_number', 255);
-            $table->string('account_number', 255);
-            $table->string('vat_number', 255);
+            $table->string('account_number', 255)->nullable();
+            $table->string('vat_number', 255)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

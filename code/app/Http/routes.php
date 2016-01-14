@@ -22,7 +22,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
      * Registration routes
      */
     Route::get('register', ['as' => 'getRegister', 'uses' =>  'Auth\AuthController@getRegister' ]);
-    Route::post('auth/register', 'Auth\AuthController@postRegister');
+    Route::post('auth/register', ['as' => 'postRegister', 'uses' => 'Auth\AuthController@postRegister']);
 
 });
 

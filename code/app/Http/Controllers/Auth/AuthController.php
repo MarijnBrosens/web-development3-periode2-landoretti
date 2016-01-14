@@ -47,13 +47,13 @@ class AuthController extends Controller
     {
         return Validator::make($data, [
             'name'                  => 'required|max:255',
-            'password'              => 'required|confirmed|min:6',
-            'country'               => 'required|not_in:0',
+            'password'              => 'required|min:3|confirmed',
+            'country_id'            => 'required|not_in:0',
             'address'               => 'required|max:255',
             //'account_number'        => 'required|max:12',
 
             'email'                 => 'required|email|max:255|unique:users',
-            'password_confirmation' => 'required|confirmed|min:6',
+            'password_confirmation' => 'required|min:3',
             'zip'                   => 'required|max:255',
             'city'                  => 'required|max:255',
             'phone_number_prefix'   => 'required|max:4',
@@ -74,15 +74,14 @@ class AuthController extends Controller
         return User::create([
             'name'                  => $data['name'],
             'password'              => bcrypt($data['password']),
-            'country'               => $data['country'],
+            'country_id'            => $data['country_id'],
             'address'               => $data['address'],
             'account_number'        => $data['account_number'] ?: null,
 
             'email'                 => $data['email'],
             'zip'                   => $data['zip'],
             'city'                  => $data['city'],
-            'phone_number_prefix'   => $data['phone_number_prefix'],
-            'phone_number'          => $data['phone_number'],
+            'phone_number'          => $data['phone_number_prefix'] . $data['phone_number'],
             'vat_number'            => $data['vat_number'] ?: null,
         ]);
     }
