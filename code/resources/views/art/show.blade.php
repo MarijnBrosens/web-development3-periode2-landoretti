@@ -9,7 +9,10 @@
         @include('partials.spotlight-header')
 
         <div class="container">
-            {!! Breadcrumbs::render('art-detail') !!}
+            <div class="clearfix">
+                {!! Breadcrumbs::render('art-detail') !!}
+            </div>
+
         </div>
 
         <div class="container">
@@ -38,6 +41,9 @@
                 </div>
             </div>
 
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_sharing_toolbox"></div>
+
 
 
             {{$auction->slug}}
@@ -47,6 +53,5 @@
         </div>
 
     </main>
-
 
 @stop

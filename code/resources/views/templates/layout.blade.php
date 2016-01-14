@@ -69,6 +69,7 @@
 @include('partials.footer')
 
 {!! Html::script('js/app.js') !!}
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-553c17ad0c6ef836" async="async"></script>
 
 </body>
 </html>
