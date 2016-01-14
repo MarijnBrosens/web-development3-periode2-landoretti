@@ -1,0 +1,14 @@
+.alert{
+    margin-top: 60px;
+    padding: 35px;
+
+    &__danger{
+        background: $error-red-bg;
+    }
+
+    &__text{
+        margin-left: 20px;
+        font-size: 14px;
+        color: $error-red-text;
+    }
+}
