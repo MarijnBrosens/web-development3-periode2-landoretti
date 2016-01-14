@@ -23,6 +23,7 @@ class AuthController extends Controller
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
+    protected $loginPath = '/login';
     protected $redirectPath = '/';
     protected $redirectAfterLogout = '/';
 
@@ -45,9 +46,20 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|confirmed|min:6',
+            'name'                  => 'required|max:255',
+            'password'              => 'required|confirmed|min:6',
+            'country'               => 'required|not_in:0',
+            'address'               => 'required|max:255',
+            //'account_number'        => 'required|max:12',
+
+            'email'                 => 'required|email|max:255|unique:users',
+            'password_confirmation' => 'required|confirmed|min:6',
+            'zip'                   => 'required|max:255',
+            'city'                  => 'required|max:255',
+            'phone_number_prefix'   => 'required|max:4',
+            'phone_number'          => 'required|max:12',
+            //'vat_number'            => 'required|max:12',
+            'terms_conditions'      => 'required',
         ]);
     }
 
@@ -60,9 +72,18 @@ class AuthController extends Controller
     protected function create(array $data)
     {
         return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'name'                  => $data['name'],
+            'password'              => bcrypt($data['password']),
+            'country'               => $data['country'],
+            'address'               => $data['address'],
+            'account_number'        => $data['account_number'] ?: null,
+
+            'email'                 => $data['email'],
+            'zip'                   => $data['zip'],
+            'city'                  => $data['city'],
+            'phone_number_prefix'   => $data['phone_number_prefix'],
+            'phone_number'          => $data['phone_number'],
+            'vat_number'            => $data['vat_number'] ?: null,
         ]);
     }
 }
