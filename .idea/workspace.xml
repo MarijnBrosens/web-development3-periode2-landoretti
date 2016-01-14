@@ -10,8 +10,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/errors/message.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/errors/message.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -102,21 +102,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="message.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/resources/views/errors/message.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.84615386">
+            <state vertical-scroll-proportion="0.03786575">
               <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8709122">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            <state vertical-scroll-proportion="1.6923077">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#663#723#0#HTML" expanded="true" />
               </folding>
@@ -906,7 +906,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452733920991</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="show: +partial spotlight-header">
+      <created>1452734037000</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1452734037000</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -955,7 +961,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+ spotlight header" />
     <MESSAGE value="+ sort-by filter" />
     <MESSAGE value="+ breadcrumbs" />
     <MESSAGE value="+ (fast create)" />
@@ -980,7 +985,8 @@
     <MESSAGE value="+ errors.message" />
     <MESSAGE value="+ partial spotlight-header" />
     <MESSAGE value="login: action route /auth/auth fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="login: action route /auth/auth fix" />
+    <MESSAGE value="show: +partial spotlight-header" />
+    <option name="LAST_COMMIT_MESSAGE" value="show: +partial spotlight-header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1290,14 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/errors/message.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.84615386">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6415095">
@@ -1366,11 +1364,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8709122">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        <state vertical-scroll-proportion="1.6923077">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#663#723#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/errors/message.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03786575">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
