@@ -1,0 +1,10 @@
+form{
+    display: inline-block;
+}
+
+.form{
+    &--primary{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
