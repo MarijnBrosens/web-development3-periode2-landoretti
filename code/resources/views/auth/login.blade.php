@@ -4,7 +4,11 @@
 
 @section('content')
 
-    @include('partials.spotlight-header', [ 'auction' => $newest])
+    @if(isset($newest))
+
+        @include('partials.spotlight-header', [ 'auction' => $newest])
+
+    @endif
 
     <div class="container">
         <div class="clearfix">

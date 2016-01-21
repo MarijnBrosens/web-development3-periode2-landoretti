@@ -19,10 +19,15 @@
         float: left;
         width: calc(100% - 97px);
     }
+
+    &--error{
+        background: $error-red-bg;
+        border: $error-red-border;
+    }
 }
 
 
-.fileUpload {
+.file_upload {
     position: relative;
     overflow: hidden;
     background: $brand-color-grey-light;
@@ -55,7 +60,7 @@
     }
 }
 
-.fileUpload input.upload {
+.file_upload input.upload {
     position: absolute;
     top: 0;
     right: 0;

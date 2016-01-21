@@ -5,16 +5,17 @@ return [
     /*
      * My acutions page
      */
-    'my-auctions' => 'Mijn vijlingen',
-    'add-new-auction' => 'NIEUWE VIJLING TOEVOEGEN',
+    'my-auctions'       => 'Mijn veilingen',
+    'add-new-auction'   => 'NIEUWE VEILING TOEVOEGEN',
 
-    'pending' => 'In afwachting',
-    'refused' => 'Geweigerd',
-    'active' => 'Actief',
-    'expired' => 'Verlopen',
+    'pending'   => 'In afwachting',
+    'refused'   => 'Geweigerd',
+    'active'    => 'Actief',
+    'expired'   => 'Verlopen',
+    'sold'      => 'Verkocht',
 
-    'auction-details' => 'Vijling details',
-    'estimated-price' => 'Geschatte price',
-    'end-time' => 'Eind tijd',
-    'remaining-time' => 'Overige tijd',
+    'auction-details'   => 'Veiling details',
+    'estimated-price'   => 'Geschatte price',
+    'end-time'          => 'Eind tijd',
+    'remaining-time'    => 'Overige tijd',
 ];

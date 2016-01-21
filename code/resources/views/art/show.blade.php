@@ -19,23 +19,23 @@
 
             <div class="detail-slider-wrap">
                 <ul class="detail-slider bxslider">
-                    <li style="background-image: url({{$auction->image_artwork}});"></li>
-                    <li style="background-image: url({{$auction->image_signature}});"></li>
+                    <li style="background-image: url({{ asset('img/'.$auction->image_artwork)}});"></li>
+                    <li style="background-image: url({{ asset('img/'.$auction->image_signature)}});"></li>
 
                     @if( count( $auction->image_optional ) )
 
-                        <li style="background-image: url({{$auction->image_optional}});"></li>
+                        <li style="background-image: url({{ asset('img/'.$auction->image_optional)}});"></li>
 
                     @endif
                 </ul>
 
                 <div id="detail-pager">
-                    <a data-slide-index="0" href="" style="background-image: url({{$auction->image_artwork}});"></a>
-                    <a data-slide-index="1" href="" style="background-image: url({{$auction->image_signature}});"></a>
+                    <a data-slide-index="0" href="" style="background-image: url({{  asset('img/'.$auction->image_artwork )}});"></a>
+                    <a data-slide-index="1" href="" style="background-image: url({{  asset('img/'.$auction->image_signature )}});"></a>
 
                     @if( count( $auction->image_optional ) )
 
-                        <a data-slide-index="2" href="" style="background-image: url({{$auction->image_optional}});"></a>
+                        <a data-slide-index="2" href="" style="background-image: url( {{ asset('img/'. $auction->image_optional) }});"></a>
 
                     @endif
                 </div>

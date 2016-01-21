@@ -1,4 +1,4 @@
-<header class="spotlight-header" style="background-image: url({{$auction->image_artwork}});">
+<header class="spotlight-header" style="background-image: url( {{asset( 'img/'. $auction->image_artwork )}});">
     <div class="container">
         <article class="spotlight-header__info">
             <h1 class="spotlight-header__info--title">{{$auction->title}}</h1>

@@ -19,7 +19,7 @@ return [
     'home' => 'HOME',
     'art' => 'ART',
     'isearch' => 'IK ZOEK',
-    'myauctions' => 'MIJN VIJLINGEN',
+    'myauctions' => 'MIJN VEILINGEN',
     'mybids' => 'MIJN BIEDINGEN',
     'contact' => 'CONTACT'
 ];

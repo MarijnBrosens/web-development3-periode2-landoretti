@@ -6,7 +6,11 @@
 
     <main id="my-auctions">
 
-        @include('partials.spotlight-header', [ 'auction' => $newest ])
+        @if(count($newest))
+
+            @include('partials.spotlight-header', [ 'auction' => $newest ])
+
+        @endif
 
         <div class="container">
             {!! Breadcrumbs::render( 'my-auctions' , Auth::user() ) !!}
@@ -30,52 +34,76 @@
                         {{ trans('my-auctions.pending') }}
                     </h3>
 
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th class="heading__weight--normal heading__color--grey--mid td__padding--left td__text--left"> {{ trans('my-auctions.auction-details') }}</th>
-                            <th class="heading__weight--normal heading__color--grey--mid"> {{ trans('my-auctions.estimated-price') }}</th>
-                            <th class="heading__weight--normal heading__color--grey--mid"> {{ trans('my-auctions.end-time') }}</th>
-                            <th class="heading__weight--normal heading__color--grey--mid td__text--center"> {{ trans('my-auctions.remaining-time') }}</th>
-                        </tr>
 
-                        @foreach($auctions as $item)
+                    @if(count($pending))
 
-                            <tr>
-                                <td class="td--xs bg-img" style="background-image: url( {{ $item->image_artwork }} );">
+                        @include('my_auctions.partials.table', [ 'auctions' => $pending ])
 
-                                </td>
-                                <td class="td--md td__padding--left">
-                                    <h2 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid">{{$item->title}}</h2>
-                                    <h3 class="heading heading__size--small heading__weight--bold heading__color--theme--dark">1979, Salvador Dali</h3>
-                                </td>
-                                <td class="td--sm td__text--center">
-                                    <h2 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid">&#8364; 8.900</h2>
-                                </td>
-                                <td class="td--sm td__text--center td__padding--around">
-                                    <h3 class="heading heading__size--small heading__weight--bold heading__color--grey--mid">September 09, 2013 13:00 p.m. (EST)</h3>
-                                </td>
-                                <td class="td--sm td__text--center td__padding--around">
-                                    <h3 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid">25d 14u 44m</h3>
-                                </td>
-                            </tr>
+                    @else
 
-                        @endforeach
+                        <p>You currently have no auctions pending</p>
 
-                    </table>
+                    @endif
 
 
                     <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
                         {{ trans('my-auctions.refused') }}
                     </h3>
 
+
+                    @if(count($refused))
+
+                        @include('my_auctions.partials.table', [ 'auctions' => $refused ])
+
+                    @else
+
+                        <p>You currently have no auctions refused</p>
+
+                    @endif
+
                     <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
                         {{ trans('my-auctions.active') }}
                     </h3>
 
+                    @if(count($active))
+
+                        @include('my_auctions.partials.table', [ 'auctions' => $active ])
+
+                    @else
+
+                        <p>You currently have no auctions refused</p>
+
+                    @endif
+
                     <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
                         {{ trans('my-auctions.expired') }}
                     </h3>
+
+
+                    @if(count($expired))
+
+                        @include('my_auctions.partials.table', [ 'auctions' => $expired ])
+
+                    @else
+
+                        <p>You currently have no auctions expired</p>
+
+                    @endif
+
+                    <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
+                        {{ trans('my-auctions.sold') }}
+                    </h3>
+
+                    @if(count($sold))
+
+                        @include('my_auctions.partials.table', [ 'auctions' => $sold ])
+
+                    @else
+
+                        <p>You currently have no auctions expired</p>
+
+                    @endif
+
 
 
 

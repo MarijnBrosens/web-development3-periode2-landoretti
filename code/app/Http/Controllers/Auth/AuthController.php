@@ -59,7 +59,7 @@ class AuthController extends Controller
             'phone_number_prefix'   => 'required|max:4',
             'phone_number'          => 'required|max:12',
             //'vat_number'            => 'required|max:12',
-            'terms_conditions'      => 'required',
+            'terms_conditions'      => 'accepted',
         ]);
     }
 

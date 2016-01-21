@@ -12,8 +12,8 @@
 
                 @foreach($auctions as $auction)
 
-                    <li>
-                        <img src="{{$auction->image_artwork}}" alt="{{$auction->title}}" title="{{$auction->description}}"/>
+                    <li style="height: 857px; overflow-y: hidden;">
+                        <img src="{{asset( 'img/'. $auction->image_artwork )}}" alt="{{$auction->title}}" title="{{$auction->description}}"/>
                     </li>
 
                 @endforeach
@@ -61,7 +61,7 @@
 
                             @foreach($popular as $auction)
 
-                                <a href="{{ route( 'show', $parameters = array( $auction->slug ), $attributes = array() ) }}" class="item" style="background-image: url({{$auction->image_artwork}}});">
+                                <a href="{{ route( 'show', $parameters = array( $auction->slug ), $attributes = array() ) }}" class="item" style="background-image: url({{  asset('img/'. $auction->image_artwork )}});">
 
                                     <div class="overlay">
                                         <i class="sprite sprite-home-hover-search-icon-big"></i>
