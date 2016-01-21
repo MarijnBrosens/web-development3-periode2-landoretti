@@ -37,4 +37,12 @@
             font-style: italic;
         }
     }
+
+    &__submit{
+        background: $brand-color-grey-silver;
+        height: 30px;
+        width: 30px;
+        border: none;
+        cursor: pointer;
+    }
 }

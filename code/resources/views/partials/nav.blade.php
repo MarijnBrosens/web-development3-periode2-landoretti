@@ -21,7 +21,7 @@
 
                         <input id="login-form__user" type="text" name="email" value="{{ old('email') }}" placeholder="{{ trans('nav.user') }}">
                         <input id="login-form__password" type="password" name="password" id="password" placeholder="{{ trans('nav.password') }}">
-                        <button class="login-form__submit" type="submit"><i class="sprite sprite sprite-detail-visitauction-arrow"></i></button>
+                        <button id="login-form__submit" type="submit"><i class="sprite sprite sprite-detail-visitauction-arrow"></i></button>
                     {!! Form::close() !!}
 
                 @endif
