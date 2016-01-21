@@ -61,27 +61,44 @@
 
                 <div class="row--full-width">
 
+                    <div class="grid-all-auctions__item grid-all-auctions__first-item">
+                        <figure class="grid-all-auctions__first-item--img" style="background-image: url( {{asset( 'img/'. $newest->image_artwork )}});">
+                            <div class="featured">
+                                <h1 class="featured--title">{{$newest->title}}</h1>
+                                <p class="featured--description">{{$newest->description}}</p>
+                            </div>
+
+                        </figure>
+
+
+                    </div>
+
                     @foreach($auctions as $key=>$item)
 
-                        @if( $key == 0 )
-
-                            <div class="grid-all-auctions__item grid-all-auctions__first-item">
-                                <figure class="grid-all-auctions__first-item--img" style="background-image: url( {{asset( 'img/'. $item->image_artwork )}});">
-                                    <h2>{{$item->title}}</h2>
-                                    <p>dit is wss een info vak, navragen aan sam</p>
+                        <div class="grid-all-auctions__item">
+                            <a href="{{ route( 'show', $parameters = array( $item->slug ), $attributes = array() ) }}">
+                                <figure class="auction grid-all-auctions__item--img" style="background-image: url(  {{asset( 'img/'. $item->image_artwork )}} );">
+                                    <div class="overlay">
+                                        <i class="sprite sprite-home-hover-search-icon-big"></i>
+                                    </div>
                                 </figure>
+                            </a>
+                            <div class="auction--info">
+                                <h3 class="auction--artist">{{$item->artist}}</h3>
+                                <h2 class="auction--title">{{$item->title}}</h2>
+                                <h1 class="auction--price">&#8364; {{$item->current_price}}</h1>
+
+                                <div class="auction auction--button-time clearfix">
+                                    <h2 class="auction--end-counter">25d 14u 44m</h2>
+
+                                    {!! link_to_route('show', $title = trans('art.visit-auction') ,
+                                    $parameters = array($item->slug),
+                                    $attributes = array('class' => 'button button--small button__pull--right button--light')) !!}
+                                </div>
+
                             </div>
 
-                        @else
-
-                            <div class="grid-all-auctions__item">
-                                <figure class="grid-all-auctions__item--img" style="background-image: url(  {{asset( 'img/'. $item->image_artwork )}} );">
-                                </figure>
-                                <h2>{{$item->title}}</h2>
-                                {!! link_to_route('show', $title = trans('art.visit-auction') , $parameters = array($item->slug), $attributes = array()) !!}
-                            </div>
-
-                        @endif
+                        </div>
 
                     @endforeach
                 </div>

@@ -1,0 +1,151 @@
+.auction{
+    &--info{
+        padding: 20px;
+        line-height: 1;
+    }
+
+    &--artist{
+        font-size: 10px;
+        color: $brand-color-blue;
+        font-weight: 400;
+        margin: 0 0 6px 0;
+    }
+
+    &--title{
+        font-size: 15px;
+        color: $brand-color-grey-mid;
+        font-weight: 500;
+        margin: 0 0 16px 0;
+    }
+
+    &--price{
+        font-size: 13px;
+        color: $brand-color-grey-mid;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &--end-counter{
+        font-size: 14px;
+        color: $brand-color-grey-mid;
+        font-weight: 300;
+        display: inline-block;
+        margin: 18px 0 0 0;
+    }
+
+
+    &--button-time{
+        border-bottom: 1px solid $brand-color-stroke-grey-light;
+    }
+
+    .button{
+        border-bottom: none;
+        color: $brand-color-blue;
+        margin-bottom: 0;
+        height: 50px;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+
+    .overlay{
+        width: 100%;
+        height: 100%;
+        background: rgba(86,86,86,0.7);
+        opacity: 0;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    i{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -100%);
+    }
+
+    &:hover .overlay{
+        opacity: 1;
+    }
+}
+
+.featured{
+    position: absolute;
+    bottom: 0;
+    padding: 50px 60px;
+    width: 100%;
+
+    &--title{
+        margin-bottom: 30px;
+        color: $brand-color-grey-dark;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 1;
+    }
+
+    &--description{
+        margin: 0;
+        color: $brand-color-grey-dark;
+        font-weight: 300;
+        font-size: 15px;
+    }
+}
+
+
+.grid-all-auctions{
+    width: 100%;
+    display: block;
+    clear: both;
+    @extend .clearfix;
+
+    .row--full-width{
+        margin-right: -8px;
+        width: auto;
+    }
+
+    &__item{
+        width: 25%;
+        float: left;
+        margin: 0;
+        margin-bottom: 60px;
+        padding: 0;
+        margin-right: 8px;
+        width: 250px;
+        height: 381px;
+        position: relative;
+
+        &--img{
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 250px;
+        }
+    }
+
+    &__first-item{
+        width: 50%;
+        width: 508px;
+        height: 822px;
+
+
+        &--img{
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        &:before{
+            content: "";
+            height: 70%;
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            background: linear-gradient(to bottom, rgba(#d9ebeb , 0), rgba(#d9ebeb , 1));
+        }
+    }
+}
