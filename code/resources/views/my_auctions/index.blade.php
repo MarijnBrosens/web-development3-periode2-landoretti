@@ -6,19 +6,21 @@
 
     <main id="my-auctions">
 
-        @include('partials.spotlight-header')
+        @include('partials.spotlight-header', [ 'auction' => $newest])
 
         <div class="container">
             {!! Breadcrumbs::render( 'my-auctions' , Auth::user() ) !!}
 
-            @include('partials.pagination', ['paginator' => $auctions])
+            @include('partials.pagination', [ 'paginator' => $auctions])
         </div>
 
         <div class="clearfix">
 
             <div class="container">
 
-                <h1 class="heading heading__weight--light heading__padding--top--medium heading__color--grey--mid">{{ trans('my-auctions.my-auctions') }}</h1>
+                <h1 class="heading heading__weight--normal heading__padding--top--medium heading__color--grey--mid">
+                    {{ trans('my-auctions.my-auctions') }}
+                </h1>
 
                 <a href="{{ route( 'newAuction', $parameters = array(), $attributes = array() ) }}"
                    class="button button--light button__pull--right">
@@ -29,32 +31,58 @@
 
 
                 <div class="clearfix">
-                    <h3>{{ trans('my-auctions.pending') }}</h3>
+                    <h3 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
+                        {{ trans('my-auctions.pending') }}
+                    </h3>
+
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th class="heading__weight--normal heading__color--grey--mid td__padding--left td__text--left"> {{ trans('my-auctions.auction-details') }}</th>
+                            <th class="heading__weight--normal heading__color--grey--mid"> {{ trans('my-auctions.estimated-price') }}</th>
+                            <th class="heading__weight--normal heading__color--grey--mid"> {{ trans('my-auctions.end-time') }}</th>
+                            <th class="heading__weight--normal heading__color--grey--mid td__text--center"> {{ trans('my-auctions.remaining-time') }}</th>
+                        </tr>
+
+                        @foreach($auctions as $item)
+
+                            <tr>
+                                <td class="td--xs bg-img" style="background-image: url( {{ $item->image_artwork }} );">
+
+                                </td>
+                                <td class="td--md td__padding--left">
+                                    <h2 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid">{{$item->title}}</h2>
+                                    <h3 class="heading heading__size--small heading__weight--bold heading__color--theme--dark">1979, Salvador Dali</h3>
+                                </td>
+                                <td class="td--sm td__text--center">
+                                    <h2 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid">&#8364; 8.900</h2>
+                                </td>
+                                <td class="td--sm td__text--center td__padding--around">
+                                    <h3 class="heading heading__size--small heading__weight--bold heading__color--grey--mid">September 09, 2013 13:00 p.m. (EST)</h3>
+                                </td>
+                                <td class="td--sm td__text--center td__padding--around">
+                                    <h3 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid">25d 14u 44m</h3>
+                                </td>
+                            </tr>
+
+                        @endforeach
+
+                    </table>
 
 
-                @foreach($auctions as $key=>$item)
+                    <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
+                        {{ trans('my-auctions.refused') }}
+                    </h3>
 
-                    @if( $key == 0 )
+                    <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
+                        {{ trans('my-auctions.active') }}
+                    </h3>
 
-                        <div class="grid-all-auctions__item grid-all-auctions__first-item">
-                            <figure class="grid-all-auctions__first-item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
-                                <h2>{{$item->title}}</h2>
-                                <p>dit is wss een info vak, navragen aan sam</p>
-                            </figure>
-                        </div>
+                    <h3 class="heading heading__padding--top--medium heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">
+                        {{ trans('my-auctions.expired') }}
+                    </h3>
 
-                    @else
 
-                        <div class="grid-all-auctions__item">
-                            <figure class="grid-all-auctions__item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
-                            </figure>
-                            <h2>{{$item->title}}</h2>
-                            {!! link_to_route('show', $title = trans('art.visit-auction') , $parameters = array($item->slug), $attributes = array()) !!}
-                        </div>
-
-                    @endif
-
-                @endforeach
 
                 </div>
 

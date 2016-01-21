@@ -21,7 +21,7 @@
 
                         <input id="login-form__user" type="text" name="email" value="{{ old('email') }}" placeholder="{{ trans('nav.user') }}">
                         <input id="login-form__password" type="password" name="password" id="password" placeholder="{{ trans('nav.password') }}">
-                        <button class="login-form__submit" type="submit"><i class="sprite sprite-nav-search"></i></button>
+                        <button class="login-form__submit" type="submit"><i class="sprite sprite sprite-detail-visitauction-arrow"></i></button>
                     {!! Form::close() !!}
 
                 @endif
@@ -42,8 +42,13 @@
                     <li>{!! link_to_route('home', $title = trans('nav.home') , $parameters = array(), $attributes = array()) !!}</li>
                     <li>{!! link_to_route('art', $title = trans('nav.art') , $parameters = array(), $attributes = array()) !!}</li>
                     <li><a href="/isearch">{{ trans('nav.isearch') }}</a></li>
-                    <li>{!! link_to_route('myAuctions', $title = trans('nav.myauctions') , $parameters = array(), $attributes = array()) !!}</li>
-                    <li><a href="/bids">{{ trans('nav.mybids') }}</a></li>
+
+                    @if(Auth::check())
+
+                        <li>{!! link_to_route('myAuctions', $title = trans('nav.myauctions') , $parameters = array(), $attributes = array()) !!}</li>
+                        <li><a href="/bids">{{ trans('nav.mybids') }}</a></li>
+                    @endif
+
                     <li><a href="/contact">{{ trans('nav.contact') }}</a></li>
 
                 </ul>

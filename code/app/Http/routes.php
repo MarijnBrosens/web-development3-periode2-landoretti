@@ -16,13 +16,27 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
      */
     Route::get('login', ['as' => 'getLogin', 'uses' => 'Auth\AuthController@getLogin' ]);
     Route::post('login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin' ]);
-    Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
     /**
      * Registration routes
      */
     Route::get('register', ['as' => 'getRegister', 'uses' =>  'Auth\AuthController@getRegister' ]);
     Route::post('auth/register', ['as' => 'postRegister', 'uses' => 'Auth\AuthController@postRegister']);
+
+
+    Route::group(['middleware' => 'auth'], function () {
+
+        Route::get('my-auctions',array('as' => 'myAuctions', 'uses' => 'MyAuctionsController@index'));
+
+        Route::get('my-auctions/new',array('as' => 'newAuction', 'uses' => 'MyAuctionsController@create'));
+
+        Route::post('my-auctions/new',array('as' => 'storeAuction', 'uses' => 'MyAuctionsController@store'));
+
+        /**
+         * Authentication logout
+         */
+        Route::get('auth/logout', array('as' => 'getLogout', 'uses' => 'Auth\AuthController@getLogout'));
+    });
 
 });
 
@@ -39,6 +53,8 @@ Route::get('/{locale}', function ($locale) {
 
 Route::get('create', function() {
     $auction = new \App\Auction();
+
+    $auction->user_id = 1;
     $auction->category_id = 1;
     $auction->media_id = 1;
     $auction->style_id = 1;

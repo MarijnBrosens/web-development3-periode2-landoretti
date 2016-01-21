@@ -47,6 +47,11 @@ class AuctionController extends Controller
     {
         $locale = App::getLocale();
 
+        $newest = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'created_at','DESC' )
+            ->first();
+
         /*
         * Return current auction
         */
@@ -54,6 +59,6 @@ class AuctionController extends Controller
             ->whereTranslation( 'slug', $slug )
             ->first();
 
-        return view( 'art.show' , array( 'auction' => $auction ) );
+        return view( 'art.show' , array( 'auction' => $auction , 'newest' => $newest ) );
     }
 }
