@@ -6,7 +6,7 @@
 
     <main id="my-auctions">
 
-        @include('partials.spotlight-header', [ 'auction' => $newest])
+        @include('partials.spotlight-header', [ 'auction' => $newest ])
 
         <div class="container">
             {!! Breadcrumbs::render( 'my-auctions' , Auth::user() ) !!}
@@ -24,9 +24,6 @@
                    class="button button--light button__pull--right">
                     {{ trans('my-auctions.add-new-auction') }} <i class="sprite sprite sprite-detail-visitauction-arrow"></i>
                 </a>
-
-
-
 
                 <div class="clearfix">
                     <h3 class="heading heading__size--small-medium heading__weight--normal heading__color--grey--mid heading__padding--bottom--small-medium">

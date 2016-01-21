@@ -46,7 +46,14 @@ class MyAuctionsController extends Controller
      */
     public function create()
     {
-        //
+        $locale = App::getLocale();
+
+        $newest = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'created_at','DESC' )
+            ->first();
+
+        return view( 'my_auctions.create' , array( 'newest' => $newest ) );
     }
 
     /**

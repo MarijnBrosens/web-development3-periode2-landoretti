@@ -21,6 +21,54 @@
     }
 }
 
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    background: $brand-color-grey-light;
+    display: block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    //line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    color: white;
+    height: 60px;
+    transition: $transition-time-fast;
+
+    span{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: -50%;
+    }
+
+    &:hover{
+        background: $brand-color-grey-mid;
+    }
+}
+
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
 label,
 .label--primary{
     font-size: 16px;
@@ -29,6 +77,10 @@ label,
     color: $brand-color-blue;
     font-weight: bold;
     clear: both;
+
+    span{
+        font-size: 12px;
+    }
 }
 
 .label--thin{
