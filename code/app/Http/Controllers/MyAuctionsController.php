@@ -34,7 +34,7 @@ class MyAuctionsController extends Controller
         $auctions = Auction::translatedIn($locale)
             ->where( 'user_id' , Auth::user()->id )
             ->orderBy( 'end_date','DESC' )
-            ->paginate(9);
+            ->get();
 
         return view( 'my_auctions.index' , array( 'auctions' => $auctions , 'newest' => $newest ) );
     }

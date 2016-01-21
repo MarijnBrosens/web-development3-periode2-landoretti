@@ -10,8 +10,6 @@
 
         <div class="container">
             {!! Breadcrumbs::render( 'my-auctions' , Auth::user() ) !!}
-
-            @include('partials.pagination', [ 'paginator' => $auctions])
         </div>
 
         <div class="clearfix">

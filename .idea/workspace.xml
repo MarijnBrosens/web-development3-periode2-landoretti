@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_tables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_clearfix.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_clearfix.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/lang/en/my-auctions.php" afterPath="$PROJECT_DIR$/code/resources/lang/en/my-auctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/lang/nl/my-auctions.php" afterPath="$PROJECT_DIR$/code/resources/lang/nl/my-auctions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -53,10 +45,23 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18311533">
-              <caret line="49" column="111" selection-start-line="49" selection-start-column="111" selection-end-line="49" selection-end-column="111" />
+            <state vertical-scroll-proportion="0.5214153">
+              <caret line="18" column="69" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="69" />
               <folding>
-                <marker date="1453343294635" expanded="true" signature="126:154" placeholder="..." />
+                <element signature="e#2041#2101#0#HTML" expanded="true" />
+                <marker date="1453343488615" expanded="true" signature="126:154" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAuctionsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.76923">
+              <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,59 +73,6 @@
             <state vertical-scroll-proportion="-5.076923">
               <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuctionController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.961538">
-              <caret line="61" column="84" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3846154">
-              <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/art/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6153846">
-              <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.076923">
-              <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spotlight-header.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.538462">
-              <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-              <folding>
-                <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
-                <marker date="1453342926394" expanded="true" signature="353:496" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,7 +127,6 @@
         <option value="$PROJECT_DIR$/code/database/migrations/2015_12_29_000024_auctions_table.php" />
         <option value="$PROJECT_DIR$/code/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/code/app/Auction.php" />
-        <option value="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
         <option value="$PROJECT_DIR$/code/resources/views/templates/layout.blade.php" />
@@ -193,6 +144,7 @@
         <option value="$PROJECT_DIR$/code/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
+        <option value="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" />
         <option value="$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php" />
       </list>
     </option>
@@ -784,12 +736,6 @@
       <option name="number" value="Default" />
       <updated>1450229175020</updated>
     </task>
-    <task id="LOCAL-00009" summary="+ home-slider">
-      <created>1450320109020</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1450320109020</updated>
-    </task>
     <task id="LOCAL-00010" summary="styling: homepage&#10;">
       <created>1450326242373</created>
       <option name="number" value="00010" />
@@ -1078,7 +1024,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453343402878</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="style myauctions">
+      <created>1453343427108</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1453343427108</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1096,7 +1048,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22334754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300866" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1127,8 +1079,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="homepage -&gt; dynamic content" />
-    <MESSAGE value="homepage -&gt; orderby" />
     <MESSAGE value="loginform -&gt; style" />
     <MESSAGE value="+ register" />
     <MESSAGE value="register all fields" />
@@ -1152,7 +1102,9 @@
     <MESSAGE value="+ share on fb" />
     <MESSAGE value="+ my auctions" />
     <MESSAGE value="update header data" />
-    <option name="LAST_COMMIT_MESSAGE" value="update header data" />
+    <MESSAGE value="style myauctions" />
+    <MESSAGE value="remove paginate my auctions" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove paginate my auctions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1369,16 +1321,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.153846">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.54717">
@@ -1475,17 +1417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.538462">
-          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
-            <marker date="1453342926394" expanded="true" signature="353:496" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.769231">
@@ -1502,10 +1433,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34767643">
+          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4045977">
+          <caret line="16" column="73" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#!!top" expanded="true" />
+            <marker date="1453342926394" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15172414">
+          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/art/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22758621">
+          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3846154">
+        <state vertical-scroll-proportion="0.101149425">
           <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8954023">
+          <caret line="61" column="84" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
           <folding />
         </state>
       </provider>
@@ -1518,44 +1492,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/home/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34767643">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.961538">
-          <caret line="61" column="84" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.076923">
-          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/art/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6153846">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-          <folding />
+        <state vertical-scroll-proportion="-17.76923">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18311533">
-          <caret line="49" column="111" selection-start-line="49" selection-start-column="111" selection-end-line="49" selection-end-column="111" />
+        <state vertical-scroll-proportion="0.5214153">
+          <caret line="18" column="69" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="69" />
           <folding>
-            <marker date="1453343294635" expanded="true" signature="126:154" placeholder="..." />
+            <element signature="e#2041#2101#0#HTML" expanded="true" />
+            <marker date="1453343488615" expanded="true" signature="126:154" placeholder="..." />
           </folding>
         </state>
       </provider>
