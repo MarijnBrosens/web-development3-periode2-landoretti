@@ -42,7 +42,7 @@
                     <li>{!! link_to_route('home', $title = trans('nav.home') , $parameters = array(), $attributes = array()) !!}</li>
                     <li>{!! link_to_route('art', $title = trans('nav.art') , $parameters = array(), $attributes = array()) !!}</li>
                     <li><a href="/isearch">{{ trans('nav.isearch') }}</a></li>
-                    <li><a href="/auctions">{{ trans('nav.myauctions') }}</a></li>
+                    <li>{!! link_to_route('myAuctions', $title = trans('nav.myauctions') , $parameters = array(), $attributes = array()) !!}</li>
                     <li><a href="/bids">{{ trans('nav.mybids') }}</a></li>
                     <li><a href="/contact">{{ trans('nav.contact') }}</a></li>
 
