@@ -46,9 +46,12 @@
     </div>
 
     <div class="container">
-        {!! Breadcrumbs::render('art') !!}
+        <div class="clearfix">
+            {!! Breadcrumbs::render('art') !!}
 
-        @include('partials.pagination', ['paginator' => $auctions])
+            @include('partials.pagination', ['paginator' => $auctions])
+        </div>
+
     </div>
 
 
@@ -90,10 +93,11 @@
 
                                 <div class="auction auction--button-time clearfix">
                                     <h2 class="auction--end-counter">25d 14u 44m</h2>
+                                    <a class="button button--small button__pull--right button--light" href="{{ route( 'show', $parameters = array( $item->slug ), $attributes = array() ) }}">
+                                        {{trans('art.visit-auction')}} <i class="sprite sprite sprite-detail-visitauction-arrow"></i>
+                                    </a>
 
-                                    {!! link_to_route('show', $title = trans('art.visit-auction') ,
-                                    $parameters = array($item->slug),
-                                    $attributes = array('class' => 'button button--small button__pull--right button--light')) !!}
+
                                 </div>
 
                             </div>

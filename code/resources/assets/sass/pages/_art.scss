@@ -45,6 +45,7 @@
         height: 50px;
         overflow: hidden;
         display: inline-block;
+        width: 120px;
     }
 
 
@@ -57,11 +58,18 @@
         cursor: pointer;
     }
 
-    i{
+    i.sprite-home-hover-search-icon-big{
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -100%);
+    }
+
+    i.sprite-detail-visitauction-arrow{
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     &:hover .overlay{
@@ -93,6 +101,7 @@
 
 
 .grid-all-auctions{
+    margin-top: 55px;
     width: 100%;
     display: block;
     clear: both;

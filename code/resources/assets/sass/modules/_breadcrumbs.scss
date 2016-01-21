@@ -2,7 +2,7 @@
     color: $brand-color-cyan;
     list-style: none;
     padding: 0;
-    margin-top: 38px;
+    margin-top: 20px;
 
     a{
         color: $brand-color-cyan;
@@ -18,5 +18,9 @@
         &::before{
             content: "\0000a0>\0000a0";
         }
+    }
+
+    &--margin-top{
+        margin: 18px;
     }
 }

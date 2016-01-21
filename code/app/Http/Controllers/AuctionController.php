@@ -32,7 +32,7 @@ class AuctionController extends Controller
         $auctions = Auction::translatedIn($locale)
             ->where( 'end_date' , '>=', Carbon::now() )
             ->orderBy( 'end_date','DESC' )
-            ->paginate(9);
+            ->paginate(8);
 
         return view( 'art.index' , array( 'auctions' => $auctions , 'newest' => $newest ) );
     }
