@@ -4,6 +4,85 @@ h1{
     font-size: 40px;
 }
 
+.heading{
+
+    padding: 0;
+    margin: 0;
+    //line-height: 1;
+
+    &--center{
+        text-align: center;
+    }
+
+    &__padding{
+        &--top{
+            &--medium{
+                padding-top: 55px;
+            }
+        }
+
+        &--bottom{
+            &--small-medium{
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    &__color{
+        &--theme{
+            &--light{
+                color: $brand-color-cyan;
+            }
+
+            &--dark{
+                color: $brand-color-blue;
+            }
+        }
+
+        &--grey{
+            &--mid{
+                color: $brand-color-grey-mid;
+            }
+        }
+    }
+
+    &__size{
+        &--small{
+            font-size: 12px;
+        }
+
+        &--small-medium{
+            font-size: 18px;
+        }
+
+        &--medium{
+            font-size: 40px;
+        }
+
+        &--big{
+            font-size: 40px;
+        }
+    }
+
+    &__weight{
+        &--light{
+            font-weight: 300;
+        }
+
+        &--normal{
+            font-weight: 400;
+        }
+
+        &--bold{
+            font-weight: 600;
+        }
+
+        &--bolder{
+            font-weight: 800;
+        }
+    }
+}
+
 
 
 .text{

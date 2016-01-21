@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/MyBidsController.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_tables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_clearfix.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_clearfix.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" />
@@ -13,17 +10,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/index.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/templates/layout.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/templates/layout.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/auth/login.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/lang/en/my-auctions.php" afterPath="$PROJECT_DIR$/code/resources/lang/en/my-auctions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/lang/nl/my-auctions.php" afterPath="$PROJECT_DIR$/code/resources/lang/nl/my-auctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/auth/register.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/routes.php" afterPath="$PROJECT_DIR$/code/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/partials/spotlight-header.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -65,7 +53,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2867784">
+            <state vertical-scroll-proportion="0.18311533">
               <caret line="49" column="111" selection-start-line="49" selection-start-column="111" selection-end-line="49" selection-end-column="111" />
               <folding>
                 <marker date="1453343294635" expanded="true" signature="126:154" placeholder="..." />
@@ -796,12 +784,6 @@
       <option name="number" value="Default" />
       <updated>1450229175020</updated>
     </task>
-    <task id="LOCAL-00008" summary="styling: nav locales">
-      <created>1450312088499</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1450312088499</updated>
-    </task>
     <task id="LOCAL-00009" summary="+ home-slider">
       <created>1450320109020</created>
       <option name="number" value="00009" />
@@ -1090,7 +1072,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453336180953</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="update header data">
+      <created>1453343402877</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1453343402878</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1108,7 +1096,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22334754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300866" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1564,7 +1552,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2867784">
+        <state vertical-scroll-proportion="0.18311533">
           <caret line="49" column="111" selection-start-line="49" selection-start-column="111" selection-end-line="49" selection-end-column="111" />
           <folding>
             <marker date="1453343294635" expanded="true" signature="126:154" placeholder="..." />

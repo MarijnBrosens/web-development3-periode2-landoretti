@@ -1,4 +1,13 @@
 .button{
+
+    padding: 20px 15px;
+    text-decoration: none;
+    color: $brand-color-grey-mid;
+    font-weight: bold;
+    font-size: 12px;
+    transition: $transition-time-fast;
+    position: relative;
+
     &--primary{
         background: $brand-color-cyan;
         padding: 16px;
@@ -7,10 +16,38 @@
         color: white;
         text-transform: uppercase;
         width: 270px;
-        transition: $transition-time-fast;
 
         &:hover{
             background: $brand-color-cyan-hover;
         }
+    }
+
+    &--light{
+        background: $brand-color-grey-lighter;
+        border: 1px solid $brand-color-stroke-grey-light;
+
+        &:hover{
+            background: darken($brand-color-grey-lighter, 3%);
+        }
+    }
+
+    &--dark{
+
+    }
+    
+    &__pull{
+        &--right{
+            float: right;
+        }
+        
+        &--left{
+            float: left;
+        }
+    }
+
+    i{
+        position: relative;
+        top: 2px;
+        margin-left: 10px;
     }
 }

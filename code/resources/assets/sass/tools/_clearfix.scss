@@ -8,4 +8,4 @@
 }
 .clearfix { display: inline-block; }
 * html .clearfix { height: 1%; }
-.clearfix { display: block; }
+.clearfix { display: block; clear: both; }
