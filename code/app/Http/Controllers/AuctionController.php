@@ -12,6 +12,7 @@ use App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Mail;
 
 class AuctionController extends Controller
 {
@@ -107,6 +108,25 @@ class AuctionController extends Controller
             $auction->status_id = 4;
             $auction->save();
 
+            $bids = App\Bid::where( 'auction_id', $auction->id  )
+                ->join('users','users.id','=','bids.user_id')
+                ->get();
+
+            $data = [
+                'auction' => $auction
+            ];
+
+            foreach ($bids as $bid) {
+                if ($bid->user_id != Auth::User()->id) {
+                    Mail::send('emails.sold', $data , function ($message) use ($bid) {
+                        $message->from('marijnbrosens16@gmail.com', 'Art sold');
+                        $message->to($bid->email)->subject('The auction where you placed a bid on is sold.');
+                    });
+                }
+            }
+
+
+
             return view( 'art.sold' , array( 'auction' => $auction , 'newest' => $newest ));
         }
     }
@@ -135,9 +155,12 @@ class AuctionController extends Controller
 
         $bid->save();
 
-        $bids = App\Bid::All();
-
         $locale = App::getLocale();
+
+        $bids = Auction::join( 'bids','bids.auction_id', '=', 'auctions.id'  )
+            ->where( 'bids.user_id', Auth::User()->id )
+            ->translatedIn($locale)
+            ->get();
 
         $newest = Auction::translatedIn($locale)
             ->where( 'end_date' , '>=', Carbon::now() )
@@ -145,7 +168,7 @@ class AuctionController extends Controller
             ->first();
 
         return view( 'my_bids.index' , array(
-            'pending'   => $bids,
+            'auctions'   => $bids,
             'newest'    => $newest ) );
     }
 
