@@ -16,6 +16,10 @@
         }
 
         &--big{
+            padding: 40px;
+        }
+
+        &--big{
 
         }
     }
@@ -28,6 +32,12 @@
 
             &--medium{
                 margin-top: 50px;
+            }
+        }
+
+        &--bottom{
+            &--large{
+                margin-bottom: 100px;
             }
         }
     }

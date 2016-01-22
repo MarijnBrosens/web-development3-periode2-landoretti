@@ -17,7 +17,7 @@
                     <h3>{{ trans('footer.help') }}</h3>
                     <a href="#">Terms of Service</a>
                     <a href="#">Privacy Policy</a>
-                    <a href="#">FAQ</a>
+                    {!! link_to_route('faq', $title = 'FAQ' , $parameters = array(), $attributes = array()) !!}
                     <a href="#">Contact Us</a>
                     <a href="#">About Us</a>
                     <h3>{{ trans('footer.languages') }}</h3>

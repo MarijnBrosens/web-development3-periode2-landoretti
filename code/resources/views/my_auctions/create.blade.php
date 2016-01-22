@@ -192,7 +192,7 @@
         <div>
             <label class="label--thin @if ($errors->has('title')) input--error @endif" for="terms_conditions">
                 <input type="checkbox" name="terms_conditions" id="terms_conditions">
-                I agree to <a href="/terms-conditions">the terms & conditions</a>
+                I agree to <a href="#">the terms & conditions</a>
             </label>
         </div>
 

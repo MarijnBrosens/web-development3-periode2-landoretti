@@ -19,6 +19,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::post('/search', ['as' => 'search', 'uses' => 'SearchController@show'] );
 
+    Route::get('/faq', ['as' => 'faq', 'uses' => 'FaqController@index'] );
+
     /**
      * Authentication routes
      */
