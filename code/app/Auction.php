@@ -35,6 +35,9 @@ class Auction extends Model
         return $this->hasOne('App\User');
     }
 
+    /*
+     * An auction has many bids
+     */
     public function bids()
     {
         return $this->hasMany('App\Bid');

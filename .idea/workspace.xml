@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Bid.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Auction.php" afterPath="$PROJECT_DIR$/code/app/Auction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Bid.php" afterPath="$PROJECT_DIR$/code/app/Bid.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -57,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bid.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Bid.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/app/Bid.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.076923">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.6321839">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auction.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Auction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/app/Auction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1484098">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state vertical-scroll-proportion="-17.76923">
+              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -183,9 +182,9 @@
         <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_jumbotron.scss" />
         <option value="$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php" />
-        <option value="$PROJECT_DIR$/code/app/Bid.php" />
-        <option value="$PROJECT_DIR$/code/app/Auction.php" />
         <option value="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
+        <option value="$PROJECT_DIR$/code/app/Auction.php" />
+        <option value="$PROJECT_DIR$/code/app/Bid.php" />
       </list>
     </option>
   </component>
@@ -692,12 +691,6 @@
       <option name="number" value="Default" />
       <updated>1450229175020</updated>
     </task>
-    <task id="LOCAL-00018" summary="+ multilang support">
-      <created>1451433674185</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1451433674185</updated>
-    </task>
     <task id="LOCAL-00019" summary="+ userstable">
       <created>1451433694468</created>
       <option name="number" value="00019" />
@@ -986,7 +979,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453424916816</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="+ bid model&#10;update other models">
+      <created>1453425274941</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1453425274941</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1004,7 +1003,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22596154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300866" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1426,14 +1425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Bid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.076923">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_000024_auctions_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49140894">
@@ -1474,8 +1465,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/app/Auction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1484098">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state vertical-scroll-proportion="-17.76923">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Bid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6321839">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
           <folding />
         </state>
       </provider>
