@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/pages/_detail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_hr-line.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_jumbotron.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_links.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/lang/nl/detail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/art/sold.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/modules/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_breadcrumbs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/modules/_bxslider.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/modules/_bxslider.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_sprites.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_sprites.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" afterPath="$PROJECT_DIR$/code/resources/assets/sass/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/routes.php" afterPath="$PROJECT_DIR$/code/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/database/migrations/2015_12_29_000024_auctions_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/database/migrations/2015_12_29_210001_create_artist_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -46,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2650176">
+            <state vertical-scroll-proportion="-27.538462">
               <caret line="196" column="29" selection-start-line="196" selection-start-column="29" selection-end-line="196" selection-end-column="29" />
               <folding>
                 <element signature="e#1741#1816#0#HTML" expanded="true" />
@@ -66,6 +53,36 @@
                 <marker date="1453424117441" expanded="true" signature="6532:6749" placeholder="..." />
                 <marker date="1453424117441" expanded="true" signature="6539:6748" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015_12_29_000024_auctions_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_000024_auctions_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.0">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_01_22_010324_bids_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.1272085">
+              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015_12_29_210001_create_artist_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_210001_create_artist_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.230769">
+              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,36 +147,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/modules/_button.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.76923">
-              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_hr-line.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/modules/_hr-line.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.3846154">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.509434">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -168,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_form.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_error-message.scss" />
         <option value="$PROJECT_DIR$/code/app/User.php" />
         <option value="$PROJECT_DIR$/code/database/migrations/2014_10_12_000000_create_users_table.php" />
@@ -219,6 +205,7 @@
         <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_text.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_jumbotron.scss" />
         <option value="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
+        <option value="$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php" />
       </list>
     </option>
   </component>
@@ -651,6 +638,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landoretti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landoretti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landoretti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landoretti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -728,12 +755,6 @@
       <created>1450229175020</created>
       <option name="number" value="Default" />
       <updated>1450229175020</updated>
-    </task>
-    <task id="LOCAL-00016" summary="+ sort-by filter">
-      <created>1451346770585</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1451346770585</updated>
     </task>
     <task id="LOCAL-00017" summary="+ (fast create)">
       <created>1451433639382</created>
@@ -1023,7 +1044,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453406837386</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="update styling detail page">
+      <created>1453424464385</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1453424464386</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1037,7 +1064,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22596154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1047,7 +1074,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31243244" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3116883" sideWeight="0.4978678" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1072,7 +1099,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="login: action route /auth/auth fix" />
     <MESSAGE value="show: +partial spotlight-header" />
     <MESSAGE value="+ error/message partial" />
     <MESSAGE value="AuthController: add validation, loginpath, create" />
@@ -1097,29 +1123,14 @@
     <MESSAGE value="styling login button" />
     <MESSAGE value="update styling art page" />
     <MESSAGE value="update styling detail page" />
-    <option name="LAST_COMMIT_MESSAGE" value="update styling detail page" />
+    <MESSAGE value="+bids migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="+bids migration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/layouts/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.461538">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/database/seeds/AuctionsSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1188,13 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5448276">
           <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_000024_auctions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42988506">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1494,7 +1498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2650176">
+        <state vertical-scroll-proportion="-27.538462">
           <caret line="196" column="29" selection-start-line="196" selection-start-column="29" selection-end-line="196" selection-end-column="29" />
           <folding>
             <element signature="e#1741#1816#0#HTML" expanded="true" />
@@ -1511,6 +1515,30 @@
             <marker date="1453424117441" expanded="true" signature="6532:6749" placeholder="..." />
             <marker date="1453424117441" expanded="true" signature="6539:6748" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_000024_auctions_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.0">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_210001_create_artist_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.230769">
+          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1272085">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
