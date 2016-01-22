@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Bid;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\App;
+use App\Auction;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class MyBidsController extends Controller
 {
@@ -23,15 +28,18 @@ class MyBidsController extends Controller
             ->orderBy( 'created_at','DESC' )
             ->first();
 
+
+        $myBids = Auction::join( 'bids','bids.auction_id', '=', 'auctions.id'  )
+            ->where( 'bids.user_id', Auth::User()->id )
+            ->translatedIn($locale)
+            ->get();
+
+
         /**
          * Return all acutions
          */
-        $auctions = Auction::translatedIn($locale)
-            ->where( 'end_date' , '>=', Carbon::now() )
-            ->orderBy( 'end_date','DESC' )
-            ->paginate(9);
 
-        return view( 'my_bids.index' , array( 'auctions' => $auctions , 'newest' => $newest ) );
+        return view( 'my_bids.index' , array( 'auctions' => $myBids , 'newest' => $newest ) );
     }
 
     /**

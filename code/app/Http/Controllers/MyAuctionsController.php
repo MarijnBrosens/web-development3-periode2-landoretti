@@ -43,13 +43,13 @@ class MyAuctionsController extends Controller
             ->orderBy( 'end_date','DESC' )
             ->get();
 
-        $refused = Auction::translatedIn($locale)
+        $active = Auction::translatedIn($locale)
             ->where( 'user_id' , Auth::user()->id )
             ->where( 'status_id', 1 )
             ->orderBy( 'end_date','DESC' )
             ->get();
 
-        $active = Auction::translatedIn($locale)
+        $refused = Auction::translatedIn($locale)
             ->where( 'user_id' , Auth::user()->id )
             ->where( 'status_id', 2 )
             ->orderBy( 'end_date','DESC' )

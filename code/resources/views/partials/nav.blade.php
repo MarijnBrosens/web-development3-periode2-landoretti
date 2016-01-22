@@ -46,7 +46,7 @@
                     @if(Auth::check())
 
                         <li>{!! link_to_route('myAuctions', $title = trans('nav.myauctions') , $parameters = array(), $attributes = array()) !!}</li>
-                        <li><a href="/bids">{{ trans('nav.mybids') }}</a></li>
+                        <li>{!! link_to_route('myBids', $title = trans('nav.mybids') , $parameters = array(), $attributes = array()) !!}</li>
                     @endif
 
                     <li><a href="/contact">{{ trans('nav.contact') }}</a></li>

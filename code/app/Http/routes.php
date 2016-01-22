@@ -28,7 +28,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         Route::post('art/buyout' , ['as' => 'buyOutAuction', 'uses' => 'AuctionController@buyOut'] );
 
-        Route::post('art/bid-to-auction' , ['as' => 'bidToAuction', 'uses' => 'AuctionController@bidToAuction'] );
+        Route::post('art/bid' , ['as' => 'bid', 'uses' => 'AuctionController@bid'] );
+
+        Route::get('my-bids' , ['as' => 'myBids', 'uses' => 'MyBidsController@index'] );
 
         Route::get('my-auctions' , ['as' => 'myAuctions', 'uses' => 'MyAuctionsController@index'] );
 
@@ -39,7 +41,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
         /**
          * Authentication logout
          */
-        Route::get('auth/logout', array('as' => 'getLogout', 'uses' => 'Auth\AuthController@getLogout'));
+        Route::get('auth/logout', ['as' => 'getLogout', 'uses' => 'Auth\AuthController@getLogout']);
     });
 
 });

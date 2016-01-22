@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 
@@ -74,7 +75,7 @@ class AuctionController extends Controller
     public function buyout(Request $request)
     {
         $this->validate($request, [
-            'id'          => 'required'
+            'id'    => 'required'
         ]);
 
         $data = $request->all();
@@ -106,11 +107,49 @@ class AuctionController extends Controller
             $auction->status_id = 4;
             $auction->save();
 
-            return view( 'art.sold' , array( 'auction' => $auction , 'newest' => $newest ) );
+            return view( 'art.sold' , array( 'auction' => $auction , 'newest' => $newest ));
         }
-
-
     }
+
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function bid(Request $request)
+    {
+        $this->validate($request, [
+            'id'    => 'required',
+            'bid'   => 'required'
+        ]);
+
+        $data = $request->all();
+
+        $bid = new App\Bid();
+
+        $bid->user_id       = Auth::user()->id;
+        $bid->auction_id    = $data['id'];
+        $bid->price         = $data['bid'];
+
+        $bid->save();
+
+        $bids = App\Bid::All();
+
+        $locale = App::getLocale();
+
+        $newest = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'created_at','DESC' )
+            ->first();
+
+        return view( 'my_bids.index' , array(
+            'pending'   => $bids,
+            'newest'    => $newest ) );
+    }
+
+
 
 
 

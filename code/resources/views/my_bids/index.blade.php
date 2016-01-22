@@ -4,33 +4,33 @@
 
 @section('content')
 
-    @include('partials.spotlight-header', [ 'auction' => $newest])
+    @if(count($newest))
+
+        @include('partials.spotlight-header', [ 'auction' => $newest ])
+
+    @endif
+
+    <div class="container">
+        {!! Breadcrumbs::render( 'my-bids' , Auth::user() ) !!}
+    </div>
 
     <div class="container">
 
-        @foreach($auctions as $key=>$item)
+        <h1 class="heading heading__weight--normal heading__padding--top--medium heading__color--grey--mid heading__padding--bottom--small-between-medium">
+            {{ trans('my-bids.my-bids') }}
+        </h1>
 
-            @if( $key == 0 )
 
-                <div class="grid-all-auctions__item grid-all-auctions__first-item">
-                    <figure class="grid-all-auctions__first-item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
-                        <h2>{{$item->title}}</h2>
-                        <p>dit is wss een info vak, navragen aan sam</p>
-                    </figure>
-                </div>
+            @if(count($auctions))
+
+                @include('my_bids.partials.table', [ 'auctions' => $auctions ])
 
             @else
 
-                <div class="grid-all-auctions__item">
-                    <figure class="grid-all-auctions__item--img" style="background-image: url(http://www.fillmurray.com/g/1920/800);">
-                    </figure>
-                    <h2>{{$item->title}}</h2>
-                    {!! link_to_route('show', $title = trans('art.visit-auction') , $parameters = array($item->slug), $attributes = array()) !!}
-                </div>
+                <p>You currently have no bids</p>
 
             @endif
 
-        @endforeach
 
     </div>
 

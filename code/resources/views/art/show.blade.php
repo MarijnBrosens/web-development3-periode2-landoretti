@@ -163,7 +163,7 @@
                         </div>
 
                         {!! Form::open( array(
-                            'route' => 'bidToAuction',
+                            'route' => 'bid',
                             'method' => 'post',
                             'class' => 'bid_now_form',
                             'id' => 'bid_now_form'))!!}

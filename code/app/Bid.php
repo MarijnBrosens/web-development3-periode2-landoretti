@@ -29,4 +29,21 @@ class Bid extends Model
     {
         return $this->belongsTo('App\User');
     }
+
+
+
+    /*
+     * Get count of bids per auction
+     */
+    public function scopeCount($id)
+    {
+        $bidCount = Bid::where( 'auction_id', $id )->get();
+
+        return count($bidCount);
+    }
+
+    public function scopeActive($query)
+    {
+        $query->where('start_date' , '<' , Carbon::now() )->where('end_date' , '>' , Carbon::now() );
+    }
 }
