@@ -9,6 +9,21 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::get('/art', ['as' => 'art', 'uses' => 'AuctionController@index'] );
 
+    Route::post('/filter-style', ['as' => 'filterStyle', 'uses' => 'FilterController@filterStyle'] );
+
+    Route::post('/filter-media', ['as' => 'filterMedia', 'uses' => 'FilterController@filterMedia'] );
+
+    Route::post('/filter-era', ['as' => 'filterEra', 'uses' => 'FilterController@filterEra'] );
+
+    Route::post('/filter-endings', ['as' => 'filterEndings', 'uses' => 'FilterController@filterEndings'] );
+
+    Route::post('/filter-price', ['as' => 'filterPrice', 'uses' => 'FilterController@filterPrice'] );
+
+
+
+
+
+
     Route::get('/art/{slug}', ['as' => 'show', 'uses' => 'AuctionController@show'] );
 
     Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index'] );

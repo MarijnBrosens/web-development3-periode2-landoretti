@@ -42,6 +42,7 @@ class AuctionController extends Controller
         return view( 'art.index' , array( 'auctions' => $auctions , 'newest' => $newest ) );
     }
 
+
     /**
      * Display the specified resource.
      *

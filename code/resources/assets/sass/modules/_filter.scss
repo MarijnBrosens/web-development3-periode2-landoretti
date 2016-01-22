@@ -15,7 +15,15 @@
         line-height: 20px;
     }
 
-    a{
+    button{
+        padding: 0;
+        margin: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    a,button{
         font-size: 12px;
         display: inline-block;
         margin-left: 10px;
