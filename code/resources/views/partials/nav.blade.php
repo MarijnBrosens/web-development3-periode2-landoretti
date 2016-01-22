@@ -5,7 +5,12 @@
             <div class="nav nav-lined clearfix">
                 <ul>
                     @if(Auth::check())
-                        <li><a href="/watchlist" ><i class="sprite sprite-nav-menu"></i>{{ trans('nav.watchlist') }}</a></li>
+
+                        <li>
+                            <a href="{{ route( 'getWatchlist', $parameters = array(), $attributes = array() ) }}" >
+                                <i class="sprite sprite-nav-menu"></i>{{ trans('nav.watchlist') }}
+                            </a>
+                        </li>
                         <li><a href="/profile"><i class="sprite sprite-nav-user"></i>{{ trans('nav.profile') }}</a></li>
                         <li><a href="/auth/logout">{{ trans('nav.logout') }}</a></li>
                     @else

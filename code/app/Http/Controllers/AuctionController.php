@@ -149,8 +149,4 @@ class AuctionController extends Controller
             'newest'    => $newest ) );
     }
 
-
-
-
-
 }

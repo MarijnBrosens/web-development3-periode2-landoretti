@@ -11,7 +11,7 @@
         <div class="container">
             <div class="clearfix">
                 <div class="breadcrumb--padding-top">
-                    {!! Breadcrumbs::render('art-detail') !!}
+                    {!! Breadcrumbs::render('art-detail', $auction) !!}
                 </div>
 
                 <div class="lot-id">
@@ -116,8 +116,9 @@
                         <a style="display: none">{{ trans('detail.more') }}</a>
                     </p>
 
+                    @if(Auth::check())
 
-                    @if( $auction->status_id != 4 )
+                        @if( $auction->status_id != 4 )
 
 
 
@@ -177,10 +178,23 @@
 
                         {!! Form::close() !!}
 
+
+
+
                         <div class="jumbotron__inner--smaller">
-                            <a href="#" class="link--add-to-favourites">
-                                <i class="sprite sprite-detail-addtowishlist sprite__margin--right"></i>{{ trans('detail.add-to-watchlist') }}
-                            </a>
+                            {!! Form::open( array(
+                                'route' => 'storeToWatchlist',
+                                'method' => 'post',
+                                'class' => '',
+                                'id' => 'store_to_watchlist_form'))!!}
+
+                                {!! Form::hidden('id', $auction->id) !!}
+
+                                <a href="javascript:{}" onclick="document.getElementById('store_to_watchlist_form').submit(); return false;" class="link--add-to-favourites">
+                                    <i class="sprite sprite-detail-addtowishlist sprite__margin--right"></i>{{ trans('detail.add-to-watchlist') }}
+                                </a>
+
+                            {!! Form::close() !!}
                         </div>
 
 
@@ -193,7 +207,7 @@
                         </h1>
 
                     @endif
-
+                    @endif
                 </div>
 
                 </div>

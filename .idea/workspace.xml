@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/lang/en/my-bids.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/lang/nl/my-bids.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/my_bids/partials/table.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/database/migrations/2016_01_22_030451_watchlist_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Watchlist.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/WatchlistController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/views/watchlist/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/resources/lang/nl/my-watchlist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Bid.php" afterPath="$PROJECT_DIR$/code/app/Bid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/MyBidsController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/MyBidsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/routes.php" afterPath="$PROJECT_DIR$/code/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/resources/views/my_auctions/partials/table.blade.php" afterPath="$PROJECT_DIR$/code/resources/views/my_auctions/partials/table.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -42,34 +39,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
+      <file leaf-file-name="breadcrumbs.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/app/Http/breadcrumbs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.923077">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="24" selection-end-column="21" />
+            <state vertical-scroll-proportion="-19.846153">
+              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/code/resources/views/home/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.0">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+            <state vertical-scroll-proportion="-15.615385">
+              <caret line="63" column="124" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="124" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/partials/table.blade.php">
+      <file leaf-file-name="2016_01_22_030451_watchlist_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/database/migrations/2016_01_22_030451_watchlist_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.923077">
-              <caret line="7" column="105" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+            <state vertical-scroll-proportion="-14.384615">
+              <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuctionController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.769231">
+              <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="148" selection-end-column="39" />
               <folding>
-                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+                <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/resources/views/watchlist/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2867784">
+              <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-watchlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/my-watchlist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.153846">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,60 +105,40 @@
         <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/my-bids.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.923077">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-bids.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/lang/en/my-bids.php">
+      <file leaf-file-name="WatchlistController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/WatchlistController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.153846">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="breadcrumbs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/app/Http/breadcrumbs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.923077">
-              <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="my-auctions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/my-auctions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyAuctionsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1632184">
-              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state vertical-scroll-proportion="-9.307693">
+              <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.6153846">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.307692">
+              <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,11 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/resources/views/myauctions/index.blade.php" />
-        <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_clearfix.scss" />
-        <option value="$PROJECT_DIR$/code/resources/views/templates/layout.blade.php" />
-        <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_init.scss" />
-        <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_tables.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/layouts/_nav.scss" />
         <option value="$PROJECT_DIR$/code/resources/assets/sass/tools/_vars.scss" />
         <option value="$PROJECT_DIR$/code/app/Http/Controllers/Auth/AuthController.php" />
@@ -182,10 +184,6 @@
         <option value="$PROJECT_DIR$/code/resources/assets/sass/modules/_jumbotron.scss" />
         <option value="$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php" />
         <option value="$PROJECT_DIR$/code/app/Auction.php" />
-        <option value="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
-        <option value="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
-        <option value="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
-        <option value="$PROJECT_DIR$/code/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/code/app/Bid.php" />
         <option value="$PROJECT_DIR$/code/app/Http/Controllers/MyBidsController.php" />
         <option value="$PROJECT_DIR$/code/resources/views/my_auctions/partials/table.blade.php" />
@@ -193,8 +191,17 @@
         <option value="$PROJECT_DIR$/code/resources/views/my_bids/partials/table.blade.php" />
         <option value="$PROJECT_DIR$/code/resources/lang/nl/my-bids.php" />
         <option value="$PROJECT_DIR$/code/resources/lang/en/my-bids.php" />
-        <option value="$PROJECT_DIR$/code/app/Http/breadcrumbs.php" />
         <option value="$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php" />
+        <option value="$PROJECT_DIR$/code/app/Http/breadcrumbs.php" />
+        <option value="$PROJECT_DIR$/code/app/Watchlist.php" />
+        <option value="$PROJECT_DIR$/code/database/migrations/2016_01_22_030451_watchlist_table.php" />
+        <option value="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
+        <option value="$PROJECT_DIR$/code/resources/views/art/show.blade.php" />
+        <option value="$PROJECT_DIR$/code/resources/views/partials/nav.blade.php" />
+        <option value="$PROJECT_DIR$/code/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/code/app/Http/Controllers/WatchlistController.php" />
+        <option value="$PROJECT_DIR$/code/resources/lang/nl/my-watchlist.php" />
+        <option value="$PROJECT_DIR$/code/resources/views/watchlist/index.blade.php" />
       </list>
     </option>
   </component>
@@ -315,36 +322,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="my_bids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Landoretti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Landoretti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -371,7 +348,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="my_auctions" />
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landoretti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landoretti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="art" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -420,10 +423,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="en" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,12 +561,6 @@
       <created>1450229175020</created>
       <option name="number" value="Default" />
       <updated>1450229175020</updated>
-    </task>
-    <task id="LOCAL-00020" summary="+ grid art page">
-      <created>1451433713580</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1451433713580</updated>
     </task>
     <task id="LOCAL-00021" summary="+ language changer">
       <created>1451444820141</created>
@@ -857,7 +850,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453425443068</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="+ my bids">
+      <created>1453430015696</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1453430015696</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TodoView">
@@ -875,7 +874,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22596154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3300866" sideWeight="0.5021322" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -906,8 +905,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AuthController: add validation, loginpath, create" />
-    <MESSAGE value="+ style error messages" />
     <MESSAGE value="+ style input" />
     <MESSAGE value="+ style button" />
     <MESSAGE value="+ login page" />
@@ -931,48 +928,15 @@
     <MESSAGE value="+bids migration" />
     <MESSAGE value="+ bid model&#10;update other models" />
     <MESSAGE value="+ comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ comments" />
+    <MESSAGE value="+ my bids" />
+    <MESSAGE value="+ watchlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ watchlist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23543401">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/Auth/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5448276">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15172414">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/lang/en/my-auctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35402298">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15172414">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/assets/sass/modules/_spotlight-header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35402298">
@@ -993,14 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.3436427">
           <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/home/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37241378">
-          <caret line="63" column="124" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="124" />
           <folding />
         </state>
       </provider>
@@ -1165,14 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0962199">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/database/migrations/2015_12_29_210001_create_artist_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7724138">
@@ -1213,76 +1161,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
+    <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/partials/table.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.230769">
-          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.53103447">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/code/resources/lang/en/my-bids.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.090909">
-          <caret line="165" column="43" selection-start-line="165" selection-start-column="43" selection-end-line="165" selection-end-column="43" />
-          <folding>
-            <element signature="e#1741#1816#0#HTML" expanded="true" />
-            <element signature="e#1982#2058#0#HTML" expanded="true" />
-            <element signature="e#2120#2198#0#HTML" expanded="true" />
-            <element signature="e#2331#2409#0#HTML" expanded="true" />
-            <element signature="e#4222#4246#0#HTML" expanded="true" />
-            <element signature="e#4542#4563#0#HTML" expanded="true" />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1453425640752" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Bid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.692308">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyBidsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#52#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.923077">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="24" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.3034483">
+          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1303,63 +1193,176 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32873562">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/partials/table.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.923077">
-          <caret line="7" column="105" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+        <state vertical-scroll-proportion="0.42988506">
+          <caret line="17" column="130" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="130" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/my-bids.php">
+    <entry file="file://$PROJECT_DIR$/code/app/Bid.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.923077">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state vertical-scroll-proportion="-16.615385">
+          <caret line="47" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/lang/en/my-bids.php">
+    <entry file="file://$PROJECT_DIR$/code/database/migrations/2016_01_22_010324_bids_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.153846">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.49140894">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/breadcrumbs.php">
+    <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.923077">
-          <caret line="80" column="32" selection-start-line="80" selection-start-column="32" selection-end-line="80" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/my_auctions/partials/table.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53103447">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/resources/views/my_bids/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.185567">
+          <caret line="22" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyAuctionsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1632184">
+        <state vertical-scroll-proportion="-7.958763">
           <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/MyBidsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0927835">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="41" selection-end-column="94" />
+          <folding>
+            <element signature="e#40#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Watchlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0769231">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/art/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0545454">
+          <caret line="192" column="32" selection-start-line="192" selection-start-column="32" selection-end-line="194" selection-end-column="36" />
+          <folding>
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1453432862759" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/breadcrumbs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.846153">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/database/migrations/2016_01_22_030451_watchlist_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.615385">
+          <caret line="63" column="124" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/partials/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6153846">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.307692">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/my-bids.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.923077">
+          <caret line="7" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.769231">
+          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="148" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/WatchlistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.307693">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/lang/nl/my-watchlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.153846">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/resources/views/watchlist/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2867784">
+          <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>

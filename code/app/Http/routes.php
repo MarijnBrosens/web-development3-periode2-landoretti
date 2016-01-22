@@ -38,6 +38,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
         Route::post('my-auctions/new' , ['as' => 'storeAuction', 'uses' => 'MyAuctionsController@store']);
 
+        Route::get('watchlist' , ['as' => 'getWatchlist', 'uses' => 'WatchlistController@index'] );
+
+        Route::post('watchlist' , ['as' => 'storeToWatchlist', 'uses' => 'WatchlistController@store'] );
+
         /**
          * Authentication logout
          */
