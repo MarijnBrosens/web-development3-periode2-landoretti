@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e50ee004-d80b-4c70-9240-6d09fd3cb169" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/AuctionController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/app/Http/Controllers/FilterController.php" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/FilterController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/FAQ.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Http/Controllers/FaqController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/app/Tag.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Landoretti.iws" />
@@ -84,10 +85,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FilterController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FAQ.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/app/FAQ.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/FilterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42756185">
+            <state vertical-scroll-proportion="-9.307693">
               <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
@@ -101,6 +112,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.076923">
               <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FaqController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/FaqController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.615385">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -453,12 +474,6 @@
       <option name="number" value="Default" />
       <updated>1450229175020</updated>
     </task>
-    <task id="LOCAL-00030" summary="+ detail - route">
-      <created>1452374360531</created>
-      <option name="number" value="00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1452374360531</updated>
-    </task>
     <task id="LOCAL-00031" summary="+ app.js">
       <created>1452374415091</created>
       <option name="number" value="00031" />
@@ -747,7 +762,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453485011964</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="+ filter">
+      <created>1453486579184</created>
+      <option name="number" value="00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1453486579184</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1107,16 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/FaqController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/resources/views/auth/login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0962199">
@@ -1141,14 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.88831615">
           <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/app/FAQ.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1221,11 +1224,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/FilterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42756185">
+        <state vertical-scroll-proportion="-9.307693">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/Http/Controllers/FaqController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.615385">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/app/FAQ.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
