@@ -150,8 +150,6 @@
                                 'class' => '',
                                 'id' => 'buy_out_form'))!!}
 
-                                {!! csrf_field() !!}
-
                                 {!! Form::hidden('id', $auction->id) !!}
 
                                 <a class="link--buy-now" href="javascript:{}" onclick="document.getElementById('buy_out_form').submit(); return false;">{{ trans('detail.buy-now-for') }} &#8364; {{$auction->buyout_price}}</a>
@@ -169,8 +167,6 @@
                             'method' => 'post',
                             'class' => 'bid_now_form',
                             'id' => 'bid_now_form'))!!}
-
-                            {!! csrf_field() !!}
 
                             {!! Form::hidden('id', $auction->id) !!}
 

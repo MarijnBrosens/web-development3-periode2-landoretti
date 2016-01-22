@@ -34,4 +34,9 @@ class Auction extends Model
     {
         return $this->hasOne('App\User');
     }
+
+    public function bids()
+    {
+        return $this->hasMany('App\Bid');
+    }
 }
