@@ -215,7 +215,12 @@
 
                 <div class="jumbotron jumbotron__margin--top--medium clearfix">
 
-                    <div class="jumbotron__inner--medium">
+                    <div class="jumbotron__inner--medium clearfix">
+
+
+                        <div class="box--left">
+
+
                         <h3 class=" heading
                                     heading__size--small-between-medium
                         ">
@@ -240,16 +245,48 @@
                         ">
                             {{$auction->origin}}
                         </p>
+
+                        </div>
+                        <div class="box--right">
+
+                            <h3>Artist</h3>
+                            <p>{{$auction->artist}}</p>
+                            <p>
+                                {{
+                                str_limit(
+                                    $auction->origin,
+                                    $limit = 52,
+                                    $end = '...'
+                                )
+                                }}
+                            </p>
+
+                            <h3>Dimensions</h3>
+                            <p>{{$auction->width}} X {{$auction->height}} X {{$auction->depth}} cm</p>
+
+
+                            <h3>Share</h3>
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div class="addthis_sharing_toolbox"></div>
+
+                            {!! Form::open( array(
+                                'route' => 'askAQuestion',
+                                'method' => 'post',
+                                'class' => '',
+                                'id' => 'ask-a-question-form'))!!}
+
+                                {!! Form::hidden('id', $auction->id) !!}
+
+                                <button class="" type="submit">Ask a question about this auction</button>
+
+                            {!! Form::close() !!}
+                        </div>
                     </div>
 
                 </div>
 
 
             </div>
-
-
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <div class="addthis_sharing_toolbox"></div>
 
 
         </div>

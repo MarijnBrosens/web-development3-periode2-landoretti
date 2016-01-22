@@ -73,9 +73,26 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function ask(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $selectedAuction = $data['id'];
+
+        $locale = App::getLocale();
+
+        $newest = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->orderBy( 'created_at','DESC' )
+            ->first();
+
+        $auctions = Auction::translatedIn($locale)
+            ->where( 'end_date' , '>=', Carbon::now() )
+            ->where( 'status_id' , 1 )
+            ->orderBy( 'created_at','DESC' )
+            ->get();
+
+        return view( 'contact.index' , array( 'newest' => $newest ,'auctions' => $auctions , 'selected' => $selectedAuction ) );
     }
 
     /**

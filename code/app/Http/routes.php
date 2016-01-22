@@ -13,6 +13,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index'] );
 
+    Route::post('/contact' , ['as' => 'askAQuestion' , 'uses' => 'ContactController@ask']);
+
     Route::post('/mail', ['as' => 'sendMail', 'uses' => 'ContactController@sendMail'] );
 
     Route::post('/search', ['as' => 'search', 'uses' => 'SearchController@show'] );

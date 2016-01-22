@@ -12,7 +12,7 @@
 
     <div class="container">
         <div class="clearfix">
-            {!! Breadcrumbs::render('login') !!}
+            {!! Breadcrumbs::render('contact') !!}
         </div>
     </div>
 
@@ -38,15 +38,22 @@
 
                         @foreach($auctions as $auction)
 
-                            <option value="{{$auction->title}}">{{$auction->title}}</option>
+                            <option
+                                @if(isset($selected))
+                                    @if($selected == $auction->id) selected @endif
+                                @endif
+                                value="{{$auction->title}}">{{$auction->title}}
+                            </option>
 
                         @endforeach
                     </select>
 
                 @endif
-                
+
+                <label for="email">{{trans('contact.email')}}</label>
                 <input class="input--primary" type="text" name="email" value="{{ old('email') }}" placeholder="{{ trans('contact.email') }}">
 
+                <label for="content">{{trans('contact.text')}}</label>
                 <textarea class="input--primary" name="content" id="content" cols="30" rows="10"></textarea>
 
                 <button class="button--primary" type="submit">{{ trans('contact.send') }}</button>
