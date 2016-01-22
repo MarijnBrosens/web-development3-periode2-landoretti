@@ -26,11 +26,15 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::group(['middleware' => 'auth'], function () {
 
-        Route::get('my-auctions',array('as' => 'myAuctions', 'uses' => 'MyAuctionsController@index'));
+        Route::post('art/buyout' , ['as' => 'buyOutAuction', 'uses' => 'AuctionController@buyOut'] );
 
-        Route::get('my-auctions/new',array('as' => 'newAuction', 'uses' => 'MyAuctionsController@create'));
+        Route::post('art/bid-to-auction' , ['as' => 'bidToAuction', 'uses' => 'AuctionController@bidToAuction'] );
 
-        Route::post('my-auctions/new',array('as' => 'storeAuction', 'uses' => 'MyAuctionsController@store'));
+        Route::get('my-auctions' , ['as' => 'myAuctions', 'uses' => 'MyAuctionsController@index'] );
+
+        Route::get('my-auctions/new' , ['as' => 'newAuction', 'uses' => 'MyAuctionsController@create']);
+
+        Route::post('my-auctions/new' , ['as' => 'storeAuction', 'uses' => 'MyAuctionsController@store']);
 
         /**
          * Authentication logout

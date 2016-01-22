@@ -54,4 +54,12 @@
         top: 2px;
         margin-left: 10px;
     }
+
+    &--bid{
+        background: $brand-color-cyan;
+        border: none;
+        cursor: pointer;
+        color: white;
+        text-transform: uppercase;
+    }
 }

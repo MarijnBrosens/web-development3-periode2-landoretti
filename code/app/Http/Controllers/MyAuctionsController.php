@@ -142,10 +142,6 @@ class MyAuctionsController extends Controller
         $auction->height        = $data['height'];
         $auction->depth         = $data['depth'];
 
-        if($request->hasFile('image')) {
-            return 'ksdfdsf';
-        }
-
         if( $request->hasFile( 'image_artwork' ) ) {
 
             $file           = $request->file('image_artwork');

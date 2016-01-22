@@ -1,0 +1,34 @@
+.jumbotron{
+    border: 1px solid $brand-color-stroke-grey-light;
+
+    &__inner{
+
+        &--smaller{
+            padding: 10px;
+        }
+
+        &--small{
+            padding: 20px;
+        }
+
+        &--medium{
+            padding: 35px 20px;
+        }
+
+        &--big{
+
+        }
+    }
+
+    &__margin{
+        &--top{
+            &--small{
+                margin-top: 20px;
+            }
+
+            &--medium{
+                margin-top: 50px;
+            }
+        }
+    }
+}

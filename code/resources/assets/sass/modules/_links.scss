@@ -1,0 +1,11 @@
+.link{
+    &--buy-now{
+        color: $brand-color-cyan;
+        font-weight: bold;
+    }
+
+    &--add-to-favourites{
+        color: $brand-color-blue;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,51 @@
+.lot-id{
+    float: right;
+    color: $brand-color-grey-mid;
+    font-weight: normal;
+}
+
+.detail{
+    &__content{
+        &--right{
+            float: right;
+            width: 250px;
+            text-align: right;
+        }
+    }
+}
+
+.bid_now_form{
+    width: 100%;
+}
+
+.bid-now-wrapper{
+    background: $brand-color-cyan;
+    padding: 12px 25px 10px 18px;
+
+    .bids--count{
+
+    }
+
+    input{
+        padding: 12px;
+        display: inline-block;
+        width: 112px;
+        float: left;
+    }
+
+    button{
+        padding: 8px 5px;
+        position: relative;
+        transition: $transition-time-fast;
+        font-weight: bold;
+
+        i{
+            top: 4px;
+            position: relative;
+        }
+
+        &:hover{
+            color: $brand-color-grey-lighter;
+        }
+    }
+}

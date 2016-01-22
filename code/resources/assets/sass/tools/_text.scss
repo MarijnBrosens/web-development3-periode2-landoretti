@@ -16,12 +16,25 @@ h1{
 
     &__padding{
         &--top{
+
+            &--small-between-medium{
+                padding-top: 20px;
+            }
+
+            &--small-medium{
+                padding-top: 45px;
+            }
+
             &--medium{
                 padding-top: 55px;
             }
         }
 
         &--bottom{
+            &--small-between-medium{
+                padding-bottom: 24px;
+            }
+
             &--small-medium{
                 padding-bottom: 30px;
             }
@@ -40,6 +53,10 @@ h1{
         }
 
         &--grey{
+            &--light{
+                color: $brand-color-grey-light;
+            }
+
             &--mid{
                 color: $brand-color-grey-mid;
             }
@@ -51,6 +68,14 @@ h1{
             font-size: 12px;
         }
 
+        &--small-between-medium{
+            font-size: 14px;
+        }
+
+        &--small-between-medium-medium{
+            font-size: 16px;
+        }
+
         &--small-medium{
             font-size: 18px;
         }
@@ -59,8 +84,21 @@ h1{
             font-size: 22px;
         }
 
+        &--medium-big{
+            font-size: 25px;
+        }
+
+        &--medium-between-big{
+            font-size: 27px;
+        }
+
         &--big{
             font-size: 40px;
+        }
+
+        &--bigger{
+            font-size: 45px;
+            line-height: 1;
         }
     }
 
