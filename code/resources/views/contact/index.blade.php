@@ -1,6 +1,6 @@
 @extends('templates.layout')
 
-@section('title', 'Register')
+@section('title', 'Contact')
 
 @section('content')
 

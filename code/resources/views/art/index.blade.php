@@ -30,19 +30,14 @@
                     <i class="sprite sprite-filter-advanced-options-arrow"></i>
                 </div>
 
+                @include('art.partials.filter')
+
             </div>
+
+
 
         </div>
 
-        http://sachinchoolur.github.io/lightslider/index.html
-
-        https://github.com/czim/laravel-filter
-
-        http://codepen.io/javve/pen/bBfgD
-
-        http://www.listjs.com/examples/pagination
-
-        http://stackoverflow.com/questions/27673115/change-update-page-content-without-reloading-page-by-ajax-laravel
     </div>
 
     <div class="container">

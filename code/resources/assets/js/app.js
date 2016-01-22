@@ -48,6 +48,13 @@ $(document).ready(function() {
      */
     $("#chosen").chosen({width: "100%"});
 
+    /*
+     * TOGGLE VISIBILITY FILTER
+     */
+    $( ".advanced-options" ).click(function() {
+        $( '.filter' ).toggleClass( "closed" );
+    });
+
 
 
 });
