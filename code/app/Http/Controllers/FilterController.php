@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\App;
 use App\Auction;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Redirect;
 
 class FilterController extends Controller
 {
@@ -131,5 +132,13 @@ class FilterController extends Controller
         return view( 'art.index' , array( 'auctions' => $auctions , 'newest' => $newest ) );
 
     }
+
+    public function filterEndings(Request $request)
+    {
+        return Redirect::back();
+    }
+
+
+
 
 }

@@ -126,8 +126,6 @@ class AuctionController extends Controller
                 }
             }
 
-
-
             return view( 'art.sold' , array( 'auction' => $auction , 'newest' => $newest ));
         }
     }
@@ -157,6 +155,14 @@ class AuctionController extends Controller
         $bid->save();
 
         $locale = App::getLocale();
+
+        $highestbid = App\Bid::where('auction_id' , $bid->auction_id)->orderBy( 'price','DESC' )->first();
+        $auction = Auction::where('id', $bid->auction_id)->first();
+
+        if($highestbid->price > $auction->current_price){
+            $auction->current_price = $highestbid->price;
+            $auction->save();
+        }
 
         $bids = Auction::join( 'bids','bids.auction_id', '=', 'auctions.id'  )
             ->where( 'bids.user_id', Auth::User()->id )
