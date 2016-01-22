@@ -12,7 +12,8 @@
         "davejamesmiller/laravel-breadcrumbs": "^3.0",
         "dimsav/laravel-translatable": "^5.4",
         "mcamara/laravel-localization": "1.0.*",
-        "guzzlehttp/guzzle": "~5.3|~6.0"
+        "guzzlehttp/guzzle": "~5.3|~6.0",
+        "nicolaslopezj/searchable": "1.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

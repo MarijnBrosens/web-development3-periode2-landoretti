@@ -15,6 +15,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::post('/mail', ['as' => 'sendMail', 'uses' => 'ContactController@sendMail'] );
 
+    Route::post('/search', ['as' => 'search', 'uses' => 'SearchController@show'] );
+
     /**
      * Authentication routes
      */
