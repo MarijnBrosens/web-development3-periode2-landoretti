@@ -2,15 +2,19 @@
     console.log('js works');
 })();
 
-$(document).ready(function(){
+$(document).ready(function() {
 
-    $("#login").on('mouseenter', function() {
+    /*
+     * INIT LOGIN FORM
+     * navbar
+     */
+    $("#login").on('mouseenter', function () {
         $('#login').toggle();
         $('#login-form').toggle();
         $('#login-form__user').focus();
     });
 
-    $("#login-form").on('mouseleave', function() {
+    $("#login-form").on('mouseleave', function () {
         $('#login').toggle();
         $('#login-form').toggle();
     });
@@ -37,4 +41,13 @@ $(document).ready(function(){
         speed: 0,
         pagerCustom: '#detail-pager'
     });
+
+
+    /*
+     * INIT CHOSEN AUTOCOMPLETE
+     */
+    $("#chosen").chosen({width: "100%"});
+
+
+
 });

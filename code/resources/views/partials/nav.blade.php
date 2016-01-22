@@ -54,7 +54,7 @@
                         <li>{!! link_to_route('myBids', $title = trans('nav.mybids') , $parameters = array(), $attributes = array()) !!}</li>
                     @endif
 
-                    <li><a href="/contact">{{ trans('nav.contact') }}</a></li>
+                    <li>{!! link_to_route('contact', $title = trans('nav.contact') , $parameters = array(), $attributes = array()) !!}</li>
 
                 </ul>
 

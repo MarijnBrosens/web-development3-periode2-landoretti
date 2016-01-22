@@ -11,6 +11,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
 
     Route::get('/art/{slug}', ['as' => 'show', 'uses' => 'AuctionController@show'] );
 
+    Route::get('/contact', ['as' => 'contact', 'uses' => 'ContactController@index'] );
+
+    Route::post('/mail', ['as' => 'sendMail', 'uses' => 'ContactController@sendMail'] );
+
     /**
      * Authentication routes
      */
